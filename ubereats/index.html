@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <section class="headerWrapper">
+            <div class="headerLogo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="Логотип UberEats">
+                </a>
+            </div>
+            <section class="delivery">
+                <div class="deliveryWhen">
+                    <label for="buttonWhen">When</label>
+                    <input type="button" value="asap" id="buttonWhen">
+                </div>
+                <div class="deliveryTo">
+                    <label for="deliveryAdress">To</label>
+                    <input type="text" name="to" id="deliveryAdress" placeholder="ul. Bolshaya Dmitrovka,22">
+                </div>
+            </section>
+            <div class="headerButtons">
+                <input id="signIn" type="button" value="Sign In">
+                <input id="register" type="button" value="Register">
+                <a href="#" class="basket">
+                    <img src="img/icons/basket.svg" alt="Корзина покупок">
+                </a>
+            </div>
+        </section>
+    </header>
+    <section class="wrapper">
+        <section class="search">
+            <input type="text" placeholder="Search for restaurant or cuisine">
+        </section>
+        <section class="delivery">
+            <div class="deliveryWhen">
+                <label for="buttonWhen">When</label>
+                <input type="button" value="asap" id="buttonWhen">
+            </div>
+            <div class="deliveryTo">
+                <label for="deliveryAdress">To</label>
+                <input type="text" name="to" id="deliveryAdress" placeholder="ul. Bolshaya Dmitrovka,22">
+            </div>
+        </section>
+        <main class="restaurantsInfo">
+            <h2>kyiv restaurants</h2>
+            <div class="restaurant">
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/mac.jpg" alt="Макдональдс">
+                    </a>
+                    <a href="#" class="nameRestaurant">Макдональдс</a>
+                    <p class="typeRestaurant">₴₴ · Бургери</p>
+                    <p class="timeDelivery">25-35 Min</p>
+                </div>
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/wokwei.jpg" alt="WOKWEI">
+                    </a>
+                    <a href="#" class="nameRestaurant">WOKWEI</a>
+                    <p class="typeRestaurant">₴₴ · Китайська · Азіатська</p>
+                    <p class="timeDelivery">40-50 Min</p>
+                </div>
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/yizha.jpg" alt="YIZHA">
+                    </a>
+                    <a href="#" class="nameRestaurant">YIZHA</a>
+                    <p class="typeRestaurant">₴ · Американська · Бургери · Вулична їжа</p>
+                    <p class="timeDelivery">35-45 Min</p>
+                </div>
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/musafir.jpg" alt="Musafir (вул.Саксаганського)">
+                    </a>
+                    <a href="#" class="nameRestaurant">Musafir (вул.Саксаганського)</a>
+                    <p class="typeRestaurant">₴· Близькосхідна</p>
+                    <p class="timeDelivery">30-40 Min</p>
+                </div>
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/dzi.jpg" alt="Точка Дзи">
+                    </a>
+                    <a href="#" class="nameRestaurant">Точка Дзи</a>
+                    <p class="typeRestaurant">₴₴ · В'єтнамська</p>
+                    <p class="timeDelivery">40-50 Min</p>
+                </div>
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/milkbar.jpg" alt="Milk Bar">
+                    </a>
+                    <a href="#" class="nameRestaurant">Milk Bar</a>
+                    <p class="typeRestaurant">₴₴ · Десерти · Європейська</p>
+                    <p class="timeDelivery">25-35 Min</p>
+                </div>
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/pizzelove.jpg" alt="Mimosa Brooklyn Pizza">
+                    </a>
+                    <a href="#" class="nameRestaurant">Mimosa Brooklyn Pizza</a>
+                    <p class="typeRestaurant">₴ · Італійська · Піца · Американська</p>
+                    <p class="timeDelivery">15-25 Min</p>
+                </div>
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/tobe.jpg" alt="To Be">
+                    </a>
+                    <a href="#" class="nameRestaurant">To Be</a>
+                    <p class="typeRestaurant">₴₴ · Японська · Азіатська · Суші</p>
+                    <p class="timeDelivery">25-35 Min</p>
+                </div>
+                <div class="restaurantCard">
+                    <a href="#">
+                        <img src="img/cards/druzi.jpg" alt="Druzi Cafe">
+                    </a>
+                    <a href="#" class="nameRestaurant">Druzi Cafe</a>
+                    <p class="typeRestaurant">₴ · Американська · Сучасна європейська</p>
+                    <p class="timeDelivery">30-40 Min</p>
+                </div>
+            </div>
+        </main>
+
+    </section>
+    <footer>
+        <section class="wrapper">
+            <section class="footerLogo">
+                <a href="#">
+                    <img src="img/logo/white-logo.svg" alt="Білий логотип UberEats">
+                </a>
+            </section>
+            <section class="navigationBlock">
+                <section class="footerMedia">
+                    <section class="selectLanguage">
+                        <select name="language" id="language">
+                            <option value="english" selected>english</option>
+                            <option value="ukrainian">ukrainian</option>
+                            <option value="russian">russian</option>
+                        </select>
+                    </section>
+                    <section class="socialNetwork">
+                        <p><span>#</span>UberEats</p>
+                        <a href="#">
+                            <img src="img/icons/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/instagram.svg" alt="instagram">
+                        </a>
+                    </section>
+                </section>
+                <section class="aboutUberEats">
+                    <ul>
+                        <li><a href="#">About UberEats</a></li>
+                        <li><a href="#">Become a Delivery Partner</a></li>
+                        <li><a href="#">Become a Restaurant Partner</a></li>
+                    </ul>
+                </section>
+                <section class="footerNavigation">
+                    <ul>
+                        <li><a href="#">See all Cities</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </section>
+            </section>
+            <section class="apps">
+                <a href="#">
+                    <img src="img/app/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/app/en_badge_web_generic-cf6dad406f.png" alt="">
+                </a>
+            </section>
+            <section class="copyright">
+                <span>© 2019 Uber Technologies Inc.</span>
+                <a href="#">
+                    Privacy</a>
+                <a href="#">Terms</a>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>
