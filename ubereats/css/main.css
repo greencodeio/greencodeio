@@ -9,6 +9,10 @@ body {
   font-family: 'Roboto';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
   margin-bottom: 40px;
@@ -340,6 +344,17 @@ footer {
   margin-top: 23px;
 }
 
+.scrollBlock {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  background: url('../img/icons/up-arrow.svg') no-repeat 50% 50% #59BD5A;
+  bottom: 24px;
+  right: 18px;
+  
+}
+
 @media (min-width: 640px) {
   .headerButtons .basket {
     display: inline-block;
@@ -412,6 +427,11 @@ footer {
 
   .copyright a {
     margin-top: 0;
+  }
+
+  .scrollBlock {
+    width: 80px;
+    height: 80px;
   }
 }
 
