@@ -142,7 +142,7 @@ header .delivery {
   width: 20%;
 }
 
-#deliveryAdress {
+.deliveryAdress {
   height: 40px;
   width: 100%;
   outline: none;
