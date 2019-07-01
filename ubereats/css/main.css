@@ -155,7 +155,7 @@ header .delivery {
   background: url('../img/icons/location.svg');
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: 2% 50%;
+  background-position: 3% 50%;
 }
 
 .deliveryTo input::-webkit-input-placeholder {
@@ -411,6 +411,10 @@ footer {
     color: #626262;
     margin-left: 8px;
     margin-right: 8px;
+  }
+
+  .deliveryAdress {
+    background-position: 5% 50%;
   }
 
   .wrapper .delivery {
