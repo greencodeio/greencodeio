@@ -40,7 +40,8 @@ body {
         text-decoration: none; }
 
 .content-section {
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-bottom: 60px; }
 
 .main-content {
   padding-bottom: 20px;
@@ -85,9 +86,55 @@ body {
       background: #eb3f34 -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
       background: #eb3f34 -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%); }
       .main-content .main-content__article a:hover {
-        background: #eb3123 -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
-        background: #eb3123 -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
-        background: #eb3123 -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
-        -webkit-transition: background 0.5s;
-        -o-transition: background 0.5s;
-        transition: background 0.5s; }
+        background: #ff1100 -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+        background: #ff1100 -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+        background: #ff1100 -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+        -webkit-transition: background 1s;
+        -o-transition: background 1s;
+        transition: background 1s; }
+
+.content-section__article {
+  margin-top: 25px; }
+  .content-section__article h3 {
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 19px; }
+  .content-section__article p {
+    margin: 13px 0 0 0;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    line-height: 20px;
+    color: #8d8d8d; }
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  margin: 0 10px; }
+  .benefits .benefits__card {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .benefits .benefits__card img {
+      margin-right: 11px;
+      height: 42px; }
+    .benefits .benefits__card span {
+      font-family: 'Times New Roman';
+      font-size: 14px;
+      line-height: 18px;
+      font-style: italic;
+      width: 67%; }
+    .benefits .benefits__card:nth-child(3) span {
+      width: 40%; }
