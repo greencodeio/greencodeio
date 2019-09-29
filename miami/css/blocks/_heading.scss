@@ -1,0 +1,44 @@
+.heading {
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 2px;
+        background-color: $light-blue_color;
+        width: calc(50% - 20px);
+        bottom: -5px;
+        left: 0;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 2px;
+        background-color: $light-blue_color;
+        width: calc(50% - 20px);
+        bottom: -5px;
+        right: 0;
+    }
+
+    &__crown::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: url('../images/crown.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 23px;
+        height: 16px;
+        left: calc(50% - #{$crown_width / 2});
+    }
+}

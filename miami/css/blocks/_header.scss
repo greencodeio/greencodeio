@@ -1,0 +1,49 @@
+@import 'blocks/logo';
+@import 'blocks/nav';
+
+.header {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 765px;
+    position: relative;
+
+    &__top {
+        position: absolute;
+        display: flex;
+        top: 35px;
+        left: calc(50% - #{$logo_width / 2});
+    }
+
+    &__phone, &__callAction {
+        position: relative;
+        top: 47px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+    }
+
+    &__phone {
+        color: #ffffff;
+        margin: 0 82px;
+    }
+
+    &__callAction a {
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: 1px dashed;
+        color: #ffffff;
+        &:hover {
+            color: #D5C5AA;
+            transition-duration: 0.2s
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+    }
+}

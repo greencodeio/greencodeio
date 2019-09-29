@@ -1,0 +1,15 @@
+.section {
+    position: relative;
+    padding: 100px calc(50% - 470px);
+
+    &:nth-child(even) {
+        background-color: #eeeeee;
+    }
+
+    &__heading {
+        top: -0.5em;
+        left: 50%;
+        transform: translate(-50%) 
+    }
+    
+}

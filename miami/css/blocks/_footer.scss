@@ -1,0 +1,22 @@
+footer {
+    background-image: url('../images/footer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        background-image: url('../images/logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: $logo_width;
+        height: $logo_height;
+        position: absolute;
+        bottom: 95px;
+        left: calc(50% - #{$logo_width / 2});
+    }
+}

@@ -1,0 +1,46 @@
+.form {
+
+    label {
+        display: block; 
+        margin-bottom: 7px;
+    }
+
+    input {
+        width: 90%;
+        padding-top: 11px;
+        padding-bottom: 7px;
+        background-color: #eeeeee;
+        border: none;
+        outline: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 36px;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+
+        &::placeholder {
+            color: #393939;
+            text-transform: uppercase;
+        }
+    }
+
+    textarea {
+        width: 90%;
+        border: none;
+        outline: none;
+        text-align: center;
+        height: 165px;
+        background-color: #eeeeee;
+        text-transform: uppercase;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 7px;
+
+        &::placeholder {
+            color: #393939;
+            text-transform: uppercase;
+        }
+    }
+}

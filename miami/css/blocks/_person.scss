@@ -1,0 +1,43 @@
+.person {
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+
+    &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__name {
+        margin: 12px 0 10px;
+        font-weight: bold;
+    }
+
+    &__position {
+        margin: 0;
+        color: #777777;
+        font-style: italic;
+    }
+
+    &__text {
+        margin: 16px 0 0;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 35px;
+            height: 30px;
+            background-image: url('../images/quotes.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            bottom: calc(100%);
+            right: calc(100% - 15px)
+        }
+    }
+}

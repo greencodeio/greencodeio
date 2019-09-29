@@ -1,0 +1,38 @@
+.nav {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        padding: 7px 20px;
+        margin: 0 22.5px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item_active {
+        background-color: $active_color;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            color: $active_color;
+            transition-duration: 0.2s
+        }
+    }
+
+
+}
