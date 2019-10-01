@@ -39,7 +39,7 @@
 
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
     .consultation {
         padding: 0 50px;
         flex-direction: column;
@@ -54,4 +54,10 @@
         }
     }
 
+}
+
+@media (max-width: 768px) {
+    .consultation {
+        padding: 0 15px;
+    }
 }

@@ -31,9 +31,15 @@
     }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
     .galery {
         flex-direction: column;
         padding: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .galery {
+        padding: 0 15px;
     }
 }

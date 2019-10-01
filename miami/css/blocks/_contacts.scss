@@ -21,12 +21,18 @@
     }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
     .contacts {
         margin-bottom: 50px;
         
         &__form {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        padding: 0 15px;
     }
 }
