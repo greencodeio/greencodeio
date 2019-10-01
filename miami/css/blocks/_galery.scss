@@ -11,7 +11,7 @@
         
     }
 
-     > p:last-child {
+    > p:last-child {
         margin-bottom: 0;
     }
 
@@ -28,5 +28,12 @@
     &__button {
         margin: 10px auto 0;
         padding: 18px 62px;
+    }
+}
+
+@media (max-width: 968px) {
+    .galery {
+        flex-direction: column;
+        padding: 0 50px;
     }
 }

@@ -29,3 +29,19 @@
         }
     }
 }
+
+@media (max-width: 968px) {
+    .photos {
+        flex-direction: column;
+
+        &__img {
+            width: 100% !important;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}

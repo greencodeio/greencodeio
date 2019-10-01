@@ -38,3 +38,20 @@
     }
 
 }
+
+@media (max-width: 968px) {
+    .consultation {
+        padding: 0 50px;
+        flex-direction: column;
+
+        &__text {
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+
+        &__form {
+            width: 100%;
+        }
+    }
+
+}

@@ -42,3 +42,14 @@
         }
     }
 }
+
+@media (max-width: 968px) {
+    .info {
+        flex-direction: column;
+        padding: 56px 50px;
+
+        &__heading {
+            margin-bottom: 25px;
+        }
+    } 
+}
