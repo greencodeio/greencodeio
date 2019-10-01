@@ -130,7 +130,7 @@ strong {
 
 @media (max-width: 768px) {
   .section__heading {
-    top: -0.6em; } }
+    top: -0.9em; } }
 
 .info {
   display: -webkit-box;
@@ -222,7 +222,13 @@ strong {
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 38px; } }
+    font-size: 26px; }
+    .heading::before {
+      bottom: 0; }
+    .heading::after {
+      bottom: 0; }
+    .heading__crown::after {
+      bottom: -10px; } }
 
 .photos {
   display: -webkit-box;

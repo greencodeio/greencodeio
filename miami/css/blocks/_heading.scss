@@ -45,6 +45,19 @@
 
 @media (max-width: 768px) {
     .heading {
-        font-size: 38px
+        font-size: 26px;
+
+        &::before {
+            bottom: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        &__crown::after {
+            bottom: -10px;
+        }
+
     }
 }
