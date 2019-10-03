@@ -1,0 +1,61 @@
+@import 'logo';
+@import 'search';
+@import 'nav';
+@import 'button';
+
+.header {
+  background-image: url('../images/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  position: relative;
+
+  &__logo, &__search, &__nav, &__button, &__title {
+    position: absolute;
+  }
+
+  &__logo, &__search, &__nav {
+    top: 40px;
+  }
+
+  &__logo {
+    left: 40px;
+  }
+
+  &__search {
+    right: 83px;
+  }
+
+
+
+  &__title {
+    font-family: $raleway_font;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 70px;
+    color: $white_color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  &__button {
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url('../images/header-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+  }
+
+}
