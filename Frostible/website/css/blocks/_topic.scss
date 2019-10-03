@@ -1,0 +1,41 @@
+.topic { 
+    
+    &__block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__text-block {
+        width: 50%;
+        padding: 0 70px;
+    }
+
+    &__heading {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: $raleway_font;
+        color: $dark-blue_color;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    &__text {
+        margin: 25px 0 0;
+        font-size: 14px;
+        font-family: $OpenSans_font;
+        color: $gray_color;
+        line-height: 26px;
+    }
+
+    &__img {
+        width: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}

@@ -1,0 +1,9 @@
+.section {
+    padding: 0 calc(50% - 1250px);
+    position: relative;
+    background-color: $white_color;
+
+    &_dark {
+        background-color: $dark-blue_color;
+    }
+}

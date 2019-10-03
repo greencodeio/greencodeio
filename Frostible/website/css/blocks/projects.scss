@@ -1,0 +1,22 @@
+.projects {
+    padding: 125px 0 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading{
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    &__caption {
+        margin: 50px 0 30px;
+        text-align: center;
+        max-width: 550px;
+        font-family: $OpenSans_font;
+        font-size: 14px;
+        line-height: 26px;
+        color: $gray_color;
+        
+    }
+}

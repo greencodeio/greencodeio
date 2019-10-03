@@ -47,15 +47,18 @@
     transform: translate(-50%, -50%);
   }
 
-  &::after {
-    content: '';
+  &__arrow {
     display: block;
     background-image: url('../images/header-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 }
