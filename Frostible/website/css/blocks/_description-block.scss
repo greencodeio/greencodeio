@@ -1,0 +1,78 @@
+.description-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+
+    &__case {
+        width: 50%;
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 20px;
+        font-family: $raleway_font;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 43px;
+        color: $dark-blue_color; 
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 14px;
+        font-family: $OpenSans_font;
+        line-height: 26px;
+        color: $gray_color;
+        max-width: 480px;
+    }
+
+    &__capture {
+        margin-top: 50px;
+        font-size: 14px;
+        font-family: $OpenSans_font;
+        font-style: italic;
+        color: $gray_color;
+        
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url('../images/clock.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-right: 10px;
+        }
+    }
+
+    &__seperator {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+
+        .line {
+            width: 75%;
+            height: 1px;
+            background-color: #dfdfdf;
+        }
+
+        .number {
+            font-family: $raleway_font;
+            font-size: 16px;
+            font-weight: 700;
+            color: #d3d3d3;
+        }
+
+        .active {
+            color: #7f8085;
+        }
+
+        .line, .number {
+            margin-right: 20px;
+        }
+    }
+
+}
