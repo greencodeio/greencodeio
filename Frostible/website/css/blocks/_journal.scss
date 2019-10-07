@@ -1,0 +1,30 @@
+.journal {
+  position: relative;
+  background-color: #fafafa;
+  padding: 260px 110px 235px; 
+
+  &__heading {
+    position: relative;
+    text-align-last: left;
+    font-size: 20px;
+    
+    &::before  {
+      left: 0;
+      transform: none;
+    }
+  }
+
+  &__text {
+    margin: 30px 0 0;
+    max-width: 350px;
+    font-family: $OpenSans_font;
+    color: $gray_color;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &__button {
+    margin-top: 30px;
+    padding: 15px 30px;
+  }
+} 
