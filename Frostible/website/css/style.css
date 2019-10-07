@@ -391,7 +391,10 @@
 .journal {
   position: relative;
   background-color: #fafafa;
-  padding: 260px 110px 235px; }
+  padding: 260px 110px 235px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .journal__heading {
     position: relative;
     text-align-last: left;
@@ -411,3 +414,31 @@
   .journal__button {
     margin-top: 30px;
     padding: 15px 30px; }
+  .journal__ilustration-block {
+    position: absolute;
+    right: 0;
+    top: -60%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    background-image: url("../images/journal/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+    width: 45%; }
+  .journal::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 345px;
+    height: 345px;
+    background-image: url("../images/journal/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2; }
