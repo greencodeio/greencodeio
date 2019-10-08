@@ -1,0 +1,35 @@
+.client {
+  padding: 75px 110px 70px;
+  display: flex;
+  justify-content: space-between;
+
+  &__slack, &__adobe, &__google, &__facebook, &__spotify, &__nike {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 85px;
+    height: 30px;
+  }
+
+  &__slack {
+    background-image: url('../images/clients/slack.png');
+  }
+
+  &__adobe {
+    background-image: url('../images/clients/adobe.png');
+  }
+
+  &__google {
+    background-image: url('../images/clients/google.png');
+  }
+
+  &__facebook {
+    background-image: url('../images/clients/facebook.png');
+  }
+  &__spotify {
+    background-image: url('../images/clients/spotify.png');
+  }
+  &__nike {
+    background-image: url('../images/clients/nike.png');
+  }
+}

@@ -1,0 +1,22 @@
+@import 'person';
+
+.team {
+  padding: 185px 110px 75px;
+
+  &__heading {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__card-row {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+
+    &:last-child {
+      padding-top: 65px;
+      
+    }
+  }
+
+}
