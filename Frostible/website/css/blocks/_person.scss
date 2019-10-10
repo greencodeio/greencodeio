@@ -1,7 +1,6 @@
 .person {
   display: flex;
-  flex-direction: column;
-  max-width: 330px;
+  flex-direction: column;       
 
   &:last-child {
     margin-right: 0;

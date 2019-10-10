@@ -27,10 +27,11 @@
   }
 
   &__nav {
-    display: none;
+    
   }
 
   &__nav-button {
+    position: fixed;
     background-color: #7c7e88;
     width: 15px;
     height: 12px;
@@ -40,6 +41,7 @@
     top: 41px;
     right: 40px;
     cursor: pointer;
+    z-index: 4;
 
     &:before, &:after {
       content: '';
@@ -61,22 +63,23 @@
     }
 
     &.active {
-        background: transparent;
-        background-clip: content-box;
+      right: 55px;
+      background: transparent;
+      background-clip: content-box;
     }
     &.active:before {
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-        top: 0;
-        background: #eee;
-        width: 110%;
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg);
+      top: 0;
+      background: #eee;
+      width: 110%;
     }
     &.active:after {
-        bottom: 0;
-        -webkit-transform: rotate(-135deg);
-        transform: rotate(-135deg);
-        background: #eee;
-        width: 110%;
+      bottom: 0;
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      background: #eee;
+      width: 110%;
     }
   }
 
