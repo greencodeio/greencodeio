@@ -81,14 +81,58 @@
   background-position: center;
   background-size: cover;
   height: 900px; }
-  .header__logo, .header__search, .header__nav, .header__button, .header__title {
+  .header__logo, .header__search, .header__nav-button, .header__button, .header__title {
     position: absolute; }
-  .header__logo, .header__search, .header__nav {
+  .header__logo, .header__search, .header__nav-button {
     top: 40px; }
   .header__logo {
     left: 40px; }
   .header__search {
     right: 83px; }
+  .header__nav {
+    display: none; }
+  .header__nav-button {
+    background-color: #7c7e88;
+    width: 15px;
+    height: 12px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    background-clip: content-box;
+    top: 41px;
+    right: 40px;
+    cursor: pointer; }
+    .header__nav-button:before, .header__nav-button:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: inherit;
+      height: 2px;
+      width: 100%;
+      will-change: rotate;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    .header__nav-button:before {
+      top: -5px; }
+    .header__nav-button:after {
+      bottom: -5px; }
+    .header__nav-button.active {
+      background: transparent;
+      background-clip: content-box; }
+    .header__nav-button.active:before {
+      -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
+      top: 0;
+      background: #eee;
+      width: 110%; }
+    .header__nav-button.active:after {
+      bottom: 0;
+      -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      background: #eee;
+      width: 110%; }
   .header__title {
     font-family: "Raleway";
     font-size: 35px;
@@ -491,8 +535,8 @@
     height: 330px;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
+    -o-object-position: 50% 25%;
+    object-position: 50% 25%;
     margin-bottom: 45px; }
   .person__name, .person__position {
     font-family: "Raleway";
