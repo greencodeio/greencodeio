@@ -14,13 +14,15 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo header__logo"></div>
-    <div class="search header__search"></div>
-    <nav class="nav header__nav"></nav>
-    <button class="button button_heading header__button">inside our studio</button>
-    <span class="header__title">frostible</span>
-    <span class="header__arrow"></span>
+  <header class="header section ">
+    <div class="wrapper wrapper_footer">
+      <div class="logo header__logo"></div>
+      <div class="search header__search"></div>
+      <nav class="nav header__nav"></nav>
+      <button class="button button_heading header__button">inside our studio</button>
+      <span class="header__title">frostible</span>
+      <span class="header__arrow"></span>
+    </div>
   </header>
   <main>
     <section class="section">
@@ -63,7 +65,7 @@
             Nullam ultrices libero nec eros commodo, a tempus metus condimentum.</p>
         </div>
         <div class="aboutUs__buttons">
-          <button class="button button_double">journal</button>
+          <button class="button button_double button_red">journal</button>
           <button class="button button_double button_white">our story</button>
         </div>
       </div>
@@ -75,7 +77,7 @@
         <p class="projects__caption">Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium
           egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
         <div class="projects__buttons">
-          <button class="button button_double">view projects</button>
+          <button class="button button_double button_red">view projects</button>
           <button class="button button_double button_dark">contact</button>
         </div>
       </div>
@@ -118,7 +120,7 @@
           <p class="journal__text">Aliquam sed posuere urna, et gravida nisl. Praesent
             interdum nisl libero, pretium egestas purus eleifend
             vitae. Mauris suscipit vel lectus at luctus.</p>
-          <button class="button journal__button">read more</button>
+          <button class="button journal__button button_red">read more</button>
         </div>
         <div class="journal__ilustration-block"></div>
       </div>
@@ -127,7 +129,7 @@
     <section class="section">
       <div class="team">
         <h2 class="heading team__heading">our team</h2>
-        <div class="team__card-row">
+        <div class="team__cards">
           <div class="person">
             <img src="images/team/1.jpg" alt="Adam Smith" class="person__img">
             <span class="person__name">adam smith</span>
@@ -176,8 +178,6 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="team__card-row">
           <div class="person">
             <img src="images/team/4.jpg" alt="Ben Ferguson" class="person__img">
             <span class="person__name">Ben Ferguson</span>
@@ -243,7 +243,59 @@
   </main>
 
   <footer class="footer section section_dark">
-    <div class="logo footer__logo"></div>
+    <div class="wrapper wrapper_footer">
+      <div class="logo logo_white footer__logo"></div>
+
+      <ul class="nav-footer footer__nav">
+        <li class="nav-footer__item">
+          <a href="" class="nav-footer__link">our team</a>
+        </li>
+        <li class="nav-footer__item">
+          <a href="" class="nav-footer__link">contact us</a>
+        </li>
+        <li class="nav-footer__item">
+          <a href="" class="nav-footer__link">support</a>
+        </li>
+        <li class="nav-footer__item">
+          <a href="" class="nav-footer__link">blog</a>
+        </li>
+      </ul>
+      <ul class="nav-footer footer__nav">
+        <li class="nav-footer__item">
+          <a href="" class="nav-footer__link">exclusive offers</a>
+        </li>
+        <li class="nav-footer__item">
+          <a href="" class="nav-footer__link">licencing</a>
+        </li>
+        <li class="nav-footer__item">
+          <a href="" class="nav-footer__link">privacy policy</a>
+        </li>
+        <li class="nav-footer__item">
+          <a href="" class="nav-footer__link">refund policy</a>
+        </li>
+      </ul>
+      <div class="footer__social">
+        <a href="" class="link">
+          <img src="images/facebook-white.svg" alt="facebook link">
+        </a>
+        <a href="" class="link">
+          <img src="images/twitter-white.svg" alt="twitter link">
+        </a>
+      </div>
+      <div class="mailing footer__mailing">
+        <h4 class="mailing__heading">join our newsletter</h4>
+        <p class="mailing__capture">Join up and get notified about new products, updates and special offers.</p>
+        <form action="" class="form mailing__form">
+          <div class="form__email">
+              <label for="">
+                  <input type="text" placeholder="enter your email">
+              </label>
+
+              <button class="form__button"></button>
+          </div>
+        </form>
+      </div>
+    </div>
   </footer>
 </body>
 

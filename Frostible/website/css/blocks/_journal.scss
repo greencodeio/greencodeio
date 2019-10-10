@@ -39,20 +39,23 @@
     background-position: center;
     height: 630px;  
     width: 45%;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      background-image: url('../images/journal/2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      bottom: -85px;
+      left: 3%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
   }
 
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 345px;
-    height: 345px;
-    background-image: url('../images/journal/2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    left: 60%;
-    transform: translateX(-50%);
-    z-index: 2;
-  }
+  
 } 

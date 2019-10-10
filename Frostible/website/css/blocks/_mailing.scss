@@ -1,0 +1,22 @@
+@import 'form';
+
+.mailing {
+  display: flex;
+  flex-direction: column;
+  max-width: 405px;
+  color: $white_color;
+
+  &__heading {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  &__capture {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+}

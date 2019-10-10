@@ -8,15 +8,12 @@
     transform: translateX(-50%);
   }
 
-  &__card-row {
+  &__cards {
     padding-top: 120px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 65px;
     justify-content: space-between;
-
-    &:last-child {
-      padding-top: 65px;
-      
-    }
   }
 
 }

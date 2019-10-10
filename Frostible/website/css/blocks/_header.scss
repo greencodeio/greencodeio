@@ -9,8 +9,6 @@
   background-position: center;
   background-size: cover;
   height: 900px;
-  position: relative;
-  padding: 0 calc(50% - 1250px);
 
   &__logo, &__search, &__nav, &__button, &__title {
     position: absolute;

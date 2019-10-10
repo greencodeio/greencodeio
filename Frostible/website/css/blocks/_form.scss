@@ -1,0 +1,40 @@
+.form {
+  
+
+  &__email {
+    max-width: 340px;
+    position: relative;
+  }
+
+  input {
+    background: transparent;
+    border: 2px solid #42434b;
+    outline: none;
+    width: 100%;
+    padding: 15px 40px 15px 20px;
+    color: $white_color;
+
+    &:hover {
+      border: 2px solid $light-red_color;
+    }
+  }
+
+  button  {
+      content: '';
+      border: none;
+      background: transparent;
+      outline: none;
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../images/form-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+    }
+}
