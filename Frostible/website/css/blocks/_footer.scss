@@ -1,3 +1,22 @@
+@import 'nav-footer';
+@import 'mailing';
+
 .footer {
-  padding: 80px 110px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: $OpenSans_font;
+
+  &__social {
+    display: flex;
+
+    .link {
+      text-decoration: none;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+  }
 }

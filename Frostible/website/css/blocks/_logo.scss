@@ -5,4 +5,8 @@
   background-size: contain;
   width: 17px;
   height: 17px;
+
+  &_white {
+    background-image: url('../images/logo-white.svg');
+  }
 }
