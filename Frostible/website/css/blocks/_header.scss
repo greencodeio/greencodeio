@@ -26,9 +26,6 @@
     right: 83px;
   }
 
-  &__nav {
-    
-  }
 
   &__nav-button {
     position: fixed;
@@ -116,5 +113,48 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    height: 770px;
+
+    &__title {
+      display: none;
+    }
+
+    &__button {
+      top: 50%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    height: 800px;
+
+    &__logo {
+      left: 35px;
+    }
+  
+    &__search {
+      right: 70px;
+    }
+
+    &__nav-button {
+      right: 35px;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__button {
+      top: 50%;
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
 }

@@ -38,5 +38,51 @@
         transform: translate(-50%, 50%);
         z-index: 2;
     }
-    
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .aboutUs {
+        padding: 125px 100px 170px;
+
+        &__topic {
+            margin-top: 170px;
+        }
+
+        &__story {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        height: 770px;
+
+        &__title {
+            display: none;
+        }
+
+        &__button {
+            top: 50%;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .aboutUs {
+        padding: 140px 36px 180px;
+
+        &__topic {
+            margin-top: 200px;
+        }
+
+        &__story {
+            margin-top: 125px;
+        }
+
+        &__buttons {
+            margin-top: 75px;
+        }
+    }
 }

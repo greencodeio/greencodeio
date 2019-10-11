@@ -51,11 +51,27 @@
       background-size: cover;
       background-position: center;
       bottom: -85px;
-      left: 3%;
+      left: 10%;
       transform: translateX(-50%);
       z-index: 2;
     }
   }
 
-  
 } 
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .journal {
+    padding: 270px 100px 225px; 
+
+    &__ilustration-block {
+  
+      &::before {
+        width: 250px;
+        height: 250px;
+        bottom: -100px;
+        left: 13%;
+
+      }
+    }
+  }
+}

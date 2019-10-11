@@ -23,3 +23,11 @@
   }
 
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-footer {
+    &__item  {
+      font-size: 14px;
+    }
+  }
+}

@@ -19,3 +19,22 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .story {
+        flex-direction: column;
+
+        &__text {
+            text-align: center;
+            
+            &:first-child {
+                margin: 0;
+                margin-bottom: 120px;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -17,3 +17,14 @@
   }
 
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .team {
+    padding: 125px 100px 40px;
+
+    &__cards {
+      grid-template-columns: 45% 45%;
+      justify-content: space-around;
+    }
+  }
+}

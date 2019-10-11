@@ -5,3 +5,9 @@
     position: relative;
     padding: 440px 110px 200px;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .studies {
+        padding: 460px 0 235px;
+    }
+}
