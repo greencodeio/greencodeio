@@ -89,3 +89,19 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .description-block {
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+
+        &__case {
+            width: 100%;
+        }
+
+        &__seperator {
+            display: none;
+        }
+    }
+}

@@ -33,3 +33,13 @@ a {
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .wrapper {
+    
+        &_footer {
+            padding: 0 35px;
+            display: block;
+        }
+    }
+}

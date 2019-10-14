@@ -34,3 +34,27 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    padding-bottom: 90px;
+    padding-top: 80px;
+
+    &__nav {
+      display: inline-block;
+      margin-top: 80px;
+      margin-right: 15%;
+    }
+
+    &__mailing {
+      margin-top: 80px;
+    }
+
+    &__social {
+      position: absolute;
+      bottom: -75px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

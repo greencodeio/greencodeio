@@ -28,3 +28,13 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .team {
+    padding: 135px 35px 40px;
+
+    &__cards {
+      grid-template-columns: 100%;
+    }
+  }
+}

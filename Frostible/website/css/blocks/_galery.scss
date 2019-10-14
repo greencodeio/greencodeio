@@ -83,3 +83,35 @@
         }
     } 
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .galery {
+        padding: 0 76px;
+        top: -5%;
+        justify-content: center;
+
+        &__image-section {
+            display: none;
+
+            img {
+                object-position: top center;
+            }
+
+            &:first-child {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &::before {
+            left: 20px;
+            
+        }
+    
+        &::after {   
+            right: 20px;
+        }
+
+    } 
+}
+

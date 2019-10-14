@@ -23,6 +23,10 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
     .projects {
-        padding: 175px 25px 180px;
+        padding: 175px 36px 180px;
+
+        &__buttons {
+            display: flex;
+        }
     }
 }

@@ -10,6 +10,10 @@
     color: $dark-blue_color;
     margin: 0;
 
+    &-journal {
+        width: 100% !important;
+    }
+
     &::before {
         content: '';
         display: block;
