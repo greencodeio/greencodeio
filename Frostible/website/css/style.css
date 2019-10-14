@@ -139,22 +139,22 @@ a {
     color: #81818181;
     border: 2px solid #e6e6e6e6; }
     .button_white:hover {
-      background-color: #f84444;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #f84444;
       border-color: #f84444; }
   .button_red {
     border: 2px solid transparent; }
     .button_red:hover {
       background-color: #fff;
       color: #f84444;
-      border: 2px solid #e6e6e6e6; }
+      border: 2px solid #f84444; }
   .button_dark {
     background-color: transparent;
     color: #ffffff;
     border: 2px solid #56585f; }
     .button_dark:hover {
-      background-color: #f84444;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #f84444;
       border-color: #f84444; }
 
 .header {
@@ -172,7 +172,6 @@ a {
   .header__search {
     right: 83px; }
   .header__nav-button {
-    position: fixed;
     background-color: #7c7e88;
     width: 15px;
     height: 12px;
@@ -983,6 +982,14 @@ a {
   width: 100%;
   padding: 15px 40px 15px 20px;
   color: #ffffff; }
+  .form input::-webkit-input-placeholder {
+    text-transform: uppercase; }
+  .form input:-ms-input-placeholder {
+    text-transform: uppercase; }
+  .form input::-ms-input-placeholder {
+    text-transform: uppercase; }
+  .form input::placeholder {
+    text-transform: uppercase; }
   .form input:hover {
     border: 2px solid #f84444; }
 

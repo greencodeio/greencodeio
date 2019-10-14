@@ -27,8 +27,8 @@
     border: 2px solid #e6e6e6e6;
 
     &:hover {
-      background-color: $light-red_color;
-      color: $white_color;
+      background-color: $white_color;
+      color: $light-red_color;
       border-color: $light-red_color;
     }
   }
@@ -40,7 +40,7 @@
       
       background-color: #fff;
       color: $light-red_color;
-      border: 2px solid #e6e6e6e6;
+      border: 2px solid $light-red_color;
     }
   }
 
@@ -50,8 +50,8 @@
     border: 2px solid #56585f;
 
     &:hover {
-      background-color: $light-red_color;
-      color: $white_color;
+      background-color: $white_color;
+      color: $light-red_color;
       border-color: $light-red_color;
     }
   }
