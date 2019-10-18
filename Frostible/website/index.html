@@ -18,6 +18,7 @@
     <div class="wrapper">
       <div class="logo header__logo"></div>
       <div class="search header__search"></div>
+      <input type="text" class="header__search-field">
       <div class="header__nav">
         <nav class="nav">
           <ul class="nav__list">
@@ -37,7 +38,7 @@
         </nav>
       </div>
       <div class="header__nav-button toggle-button"></div>
-      
+
       <button class="button button_heading header__button">inside our studio</button>
       <span class="header__title">frostible</span>
       <span class="header__arrow"></span>
@@ -150,7 +151,9 @@
         <h2 class="heading team__heading">our team</h2>
         <div class="team__cards">
           <div class="person">
-            <img src="images/team/1.jpg" alt="Adam Smith" class="person__img">
+            <div class="person__img-box">
+              <img src="images/team/1.jpg" alt="Adam Smith" class="person__img">
+            </div>
             <span class="person__name">adam smith</span>
             <span class="person__position">ceo, brand director</span>
             <p class="person__text">Lorem ipsum dolor sit amet, consectetur
@@ -158,15 +161,25 @@
               suscipit enim nec, scelerisque erat. </p>
             <div class="person__social">
               <a href="https://twitter.com" class="link">
-                <img src="images/twitter.svg" alt="twitter link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                  height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M18.012,2.544 C17.368,2.833 16.676,3.027 15.949,3.113 C16.691,2.667 17.261,1.960 17.529,1.117 C16.834,1.531 16.066,1.831 15.247,1.993 C14.592,1.291 13.659,0.854 12.625,0.854 C10.641,0.854 9.033,2.469 9.033,4.462 C9.033,4.744 9.065,5.021 9.126,5.284 C6.141,5.134 3.494,3.697 1.722,1.514 C1.413,2.047 1.236,2.667 1.236,3.328 C1.236,4.580 1.870,5.684 2.834,6.331 C2.245,6.313 1.691,6.151 1.207,5.880 C1.207,5.895 1.207,5.910 1.207,5.926 C1.207,7.674 2.445,9.133 4.088,9.463 C3.787,9.546 3.469,9.590 3.142,9.590 C2.910,9.590 2.685,9.568 2.466,9.525 C2.923,10.959 4.250,12.002 5.821,12.031 C4.592,12.999 3.043,13.576 1.360,13.576 C1.070,13.576 0.784,13.559 0.503,13.526 C2.093,14.549 3.981,15.147 6.010,15.147 C12.617,15.147 16.230,9.648 16.230,4.880 C16.230,4.724 16.227,4.568 16.220,4.413 C16.922,3.904 17.531,3.269 18.012,2.544 Z" />
+                </svg>
               </a>
               <a href="https://facebook.com" class="link">
-                <img src="images/facebook-ico.svg" alt="facebook link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px"
+                  height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M4.942,16.013 L1.642,16.013 L1.642,8.000 L-0.008,8.000 L-0.008,5.238 L1.642,5.238 L1.642,3.580 C1.642,1.327 2.573,-0.013 5.218,-0.013 L7.421,-0.013 L7.421,2.749 L6.045,2.749 C5.014,2.749 4.946,3.135 4.946,3.856 L4.942,5.238 L7.437,5.238 L7.145,8.000 L4.942,8.000 L4.942,16.013 Z" />
+                </svg>
               </a>
             </div>
           </div>
           <div class="person">
-            <img src="images/team/2.jpg" alt="Eric Johnson" class="person__img">
+            <div class="person__img-box">
+              <img src="images/team/2.jpg" alt="Eric Johnson" class="person__img">
+            </div>
             <span class="person__name">Eric Johnson</span>
             <span class="person__position">CEO, Operations director</span>
             <p class="person__text">Lorem ipsum dolor sit amet, consectetur
@@ -174,15 +187,25 @@
               suscipit enim nec, scelerisque erat. </p>
             <div class="person__social">
               <a href="https://twitter.com" class="link">
-                <img src="images/twitter.svg" alt="twitter link">
+                <svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="18px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M18.012,2.544 C17.368,2.833 16.676,3.027 15.949,3.113 C16.691,2.667 17.261,1.960 17.529,1.117 C16.834,1.531 16.066,1.831 15.247,1.993 C14.592,1.291 13.659,0.854 12.625,0.854 C10.641,0.854 9.033,2.469 9.033,4.462 C9.033,4.744 9.065,5.021 9.126,5.284 C6.141,5.134 3.494,3.697 1.722,1.514 C1.413,2.047 1.236,2.667 1.236,3.328 C1.236,4.580 1.870,5.684 2.834,6.331 C2.245,6.313 1.691,6.151 1.207,5.880 C1.207,5.895 1.207,5.910 1.207,5.926 C1.207,7.674 2.445,9.133 4.088,9.463 C3.787,9.546 3.469,9.590 3.142,9.590 C2.910,9.590 2.685,9.568 2.466,9.525 C2.923,10.959 4.250,12.002 5.821,12.031 C4.592,12.999 3.043,13.576 1.360,13.576 C1.070,13.576 0.784,13.559 0.503,13.526 C2.093,14.549 3.981,15.147 6.010,15.147 C12.617,15.147 16.230,9.648 16.230,4.880 C16.230,4.724 16.227,4.568 16.220,4.413 C16.922,3.904 17.531,3.269 18.012,2.544 Z" />
+                </svg>
               </a>
               <a href="https://facebook.com" class="link">
-                <img src="images/facebook-ico.svg" alt="facebook link">
+                <svg class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="8px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M4.942,16.013 L1.642,16.013 L1.642,8.000 L-0.008,8.000 L-0.008,5.238 L1.642,5.238 L1.642,3.580 C1.642,1.327 2.573,-0.013 5.218,-0.013 L7.421,-0.013 L7.421,2.749 L6.045,2.749 C5.014,2.749 4.946,3.135 4.946,3.856 L4.942,5.238 L7.437,5.238 L7.145,8.000 L4.942,8.000 L4.942,16.013 Z" />
+                </svg>
               </a>
             </div>
           </div>
           <div class="person">
-            <img src="images/team/3.jpg" alt="Cecelia Hines" class="person__img">
+            <div class="person__img-box">
+              <img src="images/team/3.jpg" alt="Cecelia Hines" class="person__img">
+            </div>
             <span class="person__name">Cecelia Hines</span>
             <span class="person__position">photographer</span>
             <p class="person__text">Lorem ipsum dolor sit amet, consectetur
@@ -190,15 +213,25 @@
               suscipit enim nec, scelerisque erat. </p>
             <div class="person__social">
               <a href="https://twitter.com" class="link">
-                <img src="images/twitter.svg" alt="twitter link">
+                <svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="18px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M18.012,2.544 C17.368,2.833 16.676,3.027 15.949,3.113 C16.691,2.667 17.261,1.960 17.529,1.117 C16.834,1.531 16.066,1.831 15.247,1.993 C14.592,1.291 13.659,0.854 12.625,0.854 C10.641,0.854 9.033,2.469 9.033,4.462 C9.033,4.744 9.065,5.021 9.126,5.284 C6.141,5.134 3.494,3.697 1.722,1.514 C1.413,2.047 1.236,2.667 1.236,3.328 C1.236,4.580 1.870,5.684 2.834,6.331 C2.245,6.313 1.691,6.151 1.207,5.880 C1.207,5.895 1.207,5.910 1.207,5.926 C1.207,7.674 2.445,9.133 4.088,9.463 C3.787,9.546 3.469,9.590 3.142,9.590 C2.910,9.590 2.685,9.568 2.466,9.525 C2.923,10.959 4.250,12.002 5.821,12.031 C4.592,12.999 3.043,13.576 1.360,13.576 C1.070,13.576 0.784,13.559 0.503,13.526 C2.093,14.549 3.981,15.147 6.010,15.147 C12.617,15.147 16.230,9.648 16.230,4.880 C16.230,4.724 16.227,4.568 16.220,4.413 C16.922,3.904 17.531,3.269 18.012,2.544 Z" />
+                </svg>
               </a>
               <a href="https://facebook.com" class="link">
-                <img src="images/facebook-ico.svg" alt="facebook link">
+                <svg class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="8px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M4.942,16.013 L1.642,16.013 L1.642,8.000 L-0.008,8.000 L-0.008,5.238 L1.642,5.238 L1.642,3.580 C1.642,1.327 2.573,-0.013 5.218,-0.013 L7.421,-0.013 L7.421,2.749 L6.045,2.749 C5.014,2.749 4.946,3.135 4.946,3.856 L4.942,5.238 L7.437,5.238 L7.145,8.000 L4.942,8.000 L4.942,16.013 Z" />
+                </svg>
               </a>
             </div>
           </div>
           <div class="person">
-            <img src="images/team/4.jpg" alt="Ben Ferguson" class="person__img">
+            <div class="person__img-box">
+              <img src="images/team/4.jpg" alt="Ben Ferguson" class="person__img">
+            </div>
             <span class="person__name">Ben Ferguson</span>
             <span class="person__position">brand, UI designer</span>
             <p class="person__text">Lorem ipsum dolor sit amet, consectetur
@@ -206,15 +239,25 @@
               suscipit enim nec, scelerisque erat. </p>
             <div class="person__social">
               <a href="https://twitter.com" class="link">
-                <img src="images/twitter.svg" alt="twitter link">
+                <svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="18px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M18.012,2.544 C17.368,2.833 16.676,3.027 15.949,3.113 C16.691,2.667 17.261,1.960 17.529,1.117 C16.834,1.531 16.066,1.831 15.247,1.993 C14.592,1.291 13.659,0.854 12.625,0.854 C10.641,0.854 9.033,2.469 9.033,4.462 C9.033,4.744 9.065,5.021 9.126,5.284 C6.141,5.134 3.494,3.697 1.722,1.514 C1.413,2.047 1.236,2.667 1.236,3.328 C1.236,4.580 1.870,5.684 2.834,6.331 C2.245,6.313 1.691,6.151 1.207,5.880 C1.207,5.895 1.207,5.910 1.207,5.926 C1.207,7.674 2.445,9.133 4.088,9.463 C3.787,9.546 3.469,9.590 3.142,9.590 C2.910,9.590 2.685,9.568 2.466,9.525 C2.923,10.959 4.250,12.002 5.821,12.031 C4.592,12.999 3.043,13.576 1.360,13.576 C1.070,13.576 0.784,13.559 0.503,13.526 C2.093,14.549 3.981,15.147 6.010,15.147 C12.617,15.147 16.230,9.648 16.230,4.880 C16.230,4.724 16.227,4.568 16.220,4.413 C16.922,3.904 17.531,3.269 18.012,2.544 Z" />
+                </svg>
               </a>
               <a href="https://facebook.com" class="link">
-                <img src="images/facebook-ico.svg" alt="facebook link">
+                <svg class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="8px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M4.942,16.013 L1.642,16.013 L1.642,8.000 L-0.008,8.000 L-0.008,5.238 L1.642,5.238 L1.642,3.580 C1.642,1.327 2.573,-0.013 5.218,-0.013 L7.421,-0.013 L7.421,2.749 L6.045,2.749 C5.014,2.749 4.946,3.135 4.946,3.856 L4.942,5.238 L7.437,5.238 L7.145,8.000 L4.942,8.000 L4.942,16.013 Z" />
+                </svg>
               </a>
             </div>
           </div>
           <div class="person">
-            <img src="images/team/5.jpg" alt="Judy Davis" class="person__img">
+            <div class="person__img-box">
+              <img src="images/team/5.jpg" alt="Judy Davis" class="person__img">
+            </div>
             <span class="person__name">Judy Davis</span>
             <span class="person__position">ux / ui designer</span>
             <p class="person__text">Lorem ipsum dolor sit amet, consectetur
@@ -222,15 +265,25 @@
               suscipit enim nec, scelerisque erat. </p>
             <div class="person__social">
               <a href="https://twitter.com" class="link">
-                <img src="images/twitter.svg" alt="twitter link">
+                <svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="18px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M18.012,2.544 C17.368,2.833 16.676,3.027 15.949,3.113 C16.691,2.667 17.261,1.960 17.529,1.117 C16.834,1.531 16.066,1.831 15.247,1.993 C14.592,1.291 13.659,0.854 12.625,0.854 C10.641,0.854 9.033,2.469 9.033,4.462 C9.033,4.744 9.065,5.021 9.126,5.284 C6.141,5.134 3.494,3.697 1.722,1.514 C1.413,2.047 1.236,2.667 1.236,3.328 C1.236,4.580 1.870,5.684 2.834,6.331 C2.245,6.313 1.691,6.151 1.207,5.880 C1.207,5.895 1.207,5.910 1.207,5.926 C1.207,7.674 2.445,9.133 4.088,9.463 C3.787,9.546 3.469,9.590 3.142,9.590 C2.910,9.590 2.685,9.568 2.466,9.525 C2.923,10.959 4.250,12.002 5.821,12.031 C4.592,12.999 3.043,13.576 1.360,13.576 C1.070,13.576 0.784,13.559 0.503,13.526 C2.093,14.549 3.981,15.147 6.010,15.147 C12.617,15.147 16.230,9.648 16.230,4.880 C16.230,4.724 16.227,4.568 16.220,4.413 C16.922,3.904 17.531,3.269 18.012,2.544 Z" />
+                </svg>
               </a>
               <a href="https://facebook.com" class="link">
-                <img src="images/facebook-ico.svg" alt="facebook link">
+                <svg class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="8px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M4.942,16.013 L1.642,16.013 L1.642,8.000 L-0.008,8.000 L-0.008,5.238 L1.642,5.238 L1.642,3.580 C1.642,1.327 2.573,-0.013 5.218,-0.013 L7.421,-0.013 L7.421,2.749 L6.045,2.749 C5.014,2.749 4.946,3.135 4.946,3.856 L4.942,5.238 L7.437,5.238 L7.145,8.000 L4.942,8.000 L4.942,16.013 Z" />
+                </svg>
               </a>
             </div>
           </div>
           <div class="person">
-            <img src="images/team/6.jpg" alt="Thomas Peterson" class="person__img">
+            <div class="person__img-box">
+              <img src="images/team/6.jpg" alt="Thomas Peterson" class="person__img">
+            </div>
             <span class="person__name">Thomas Peterson</span>
             <span class="person__position">project manager</span>
             <p class="person__text">Lorem ipsum dolor sit amet, consectetur
@@ -238,10 +291,18 @@
               suscipit enim nec, scelerisque erat. </p>
             <div class="person__social">
               <a href="https://twitter.com" class="link">
-                <img src="images/twitter.svg" alt="twitter link">
+                <svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="18px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M18.012,2.544 C17.368,2.833 16.676,3.027 15.949,3.113 C16.691,2.667 17.261,1.960 17.529,1.117 C16.834,1.531 16.066,1.831 15.247,1.993 C14.592,1.291 13.659,0.854 12.625,0.854 C10.641,0.854 9.033,2.469 9.033,4.462 C9.033,4.744 9.065,5.021 9.126,5.284 C6.141,5.134 3.494,3.697 1.722,1.514 C1.413,2.047 1.236,2.667 1.236,3.328 C1.236,4.580 1.870,5.684 2.834,6.331 C2.245,6.313 1.691,6.151 1.207,5.880 C1.207,5.895 1.207,5.910 1.207,5.926 C1.207,7.674 2.445,9.133 4.088,9.463 C3.787,9.546 3.469,9.590 3.142,9.590 C2.910,9.590 2.685,9.568 2.466,9.525 C2.923,10.959 4.250,12.002 5.821,12.031 C4.592,12.999 3.043,13.576 1.360,13.576 C1.070,13.576 0.784,13.559 0.503,13.526 C2.093,14.549 3.981,15.147 6.010,15.147 C12.617,15.147 16.230,9.648 16.230,4.880 C16.230,4.724 16.227,4.568 16.220,4.413 C16.922,3.904 17.531,3.269 18.012,2.544 Z" />
+                </svg>
               </a>
               <a href="https://facebook.com" class="link">
-                <img src="images/facebook-ico.svg" alt="facebook link">
+                <svg class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="8px" height="16px">
+                  <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+                    d="M4.942,16.013 L1.642,16.013 L1.642,8.000 L-0.008,8.000 L-0.008,5.238 L1.642,5.238 L1.642,3.580 C1.642,1.327 2.573,-0.013 5.218,-0.013 L7.421,-0.013 L7.421,2.749 L6.045,2.749 C5.014,2.749 4.946,3.135 4.946,3.856 L4.942,5.238 L7.437,5.238 L7.145,8.000 L4.942,8.000 L4.942,16.013 Z" />
+                </svg>
               </a>
             </div>
           </div>
@@ -294,11 +355,19 @@
         </li>
       </ul>
       <div class="footer__social">
-        <a href="" class="link">
-          <img src="images/facebook-white.svg" alt="facebook link">
+        <a href="https://twitter.com" class="link">
+          <svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="18px" height="16px">
+            <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+              d="M18.012,2.544 C17.368,2.833 16.676,3.027 15.949,3.113 C16.691,2.667 17.261,1.960 17.529,1.117 C16.834,1.531 16.066,1.831 15.247,1.993 C14.592,1.291 13.659,0.854 12.625,0.854 C10.641,0.854 9.033,2.469 9.033,4.462 C9.033,4.744 9.065,5.021 9.126,5.284 C6.141,5.134 3.494,3.697 1.722,1.514 C1.413,2.047 1.236,2.667 1.236,3.328 C1.236,4.580 1.870,5.684 2.834,6.331 C2.245,6.313 1.691,6.151 1.207,5.880 C1.207,5.895 1.207,5.910 1.207,5.926 C1.207,7.674 2.445,9.133 4.088,9.463 C3.787,9.546 3.469,9.590 3.142,9.590 C2.910,9.590 2.685,9.568 2.466,9.525 C2.923,10.959 4.250,12.002 5.821,12.031 C4.592,12.999 3.043,13.576 1.360,13.576 C1.070,13.576 0.784,13.559 0.503,13.526 C2.093,14.549 3.981,15.147 6.010,15.147 C12.617,15.147 16.230,9.648 16.230,4.880 C16.230,4.724 16.227,4.568 16.220,4.413 C16.922,3.904 17.531,3.269 18.012,2.544 Z" />
+          </svg>
         </a>
-        <a href="" class="link">
-          <img src="images/twitter-white.svg" alt="twitter link">
+        <a href="https://facebook.com" class="link">
+          <svg class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="8px" height="16px">
+            <path fill-rule="evenodd" opacity="0.4" fill="rgb(0, 0, 0)"
+              d="M4.942,16.013 L1.642,16.013 L1.642,8.000 L-0.008,8.000 L-0.008,5.238 L1.642,5.238 L1.642,3.580 C1.642,1.327 2.573,-0.013 5.218,-0.013 L7.421,-0.013 L7.421,2.749 L6.045,2.749 C5.014,2.749 4.946,3.135 4.946,3.856 L4.942,5.238 L7.437,5.238 L7.145,8.000 L4.942,8.000 L4.942,16.013 Z" />
+          </svg>
         </a>
       </div>
       <div class="mailing footer__mailing">
@@ -306,11 +375,11 @@
         <p class="mailing__capture">Join up and get notified about new products, updates and special offers.</p>
         <form action="" class="form mailing__form">
           <div class="form__email">
-              <label for="">
-                  <input type="text" placeholder="enter your email">
-              </label>
+            <label for="">
+              <input type="text" placeholder="enter your email">
+            </label>
 
-              <button class="form__button"></button>
+            <button class="form__button"></button>
           </div>
         </form>
       </div>

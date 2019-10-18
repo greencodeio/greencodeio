@@ -13,6 +13,21 @@
       text-decoration: none;
       margin-right: 20px;
 
+      svg path {
+        fill: $white_color;
+        opacity: 1;
+      }
+
+      .twitter:hover path{
+        fill:#1DA1F2;
+        transition: 0.2s;
+      }
+
+      .facebook:hover path{
+        fill: #4267B2;
+        transition: 0.2s;
+      }
+
       &:last-child {
         margin-right: 0;
       }

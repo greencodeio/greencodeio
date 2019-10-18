@@ -79,18 +79,31 @@ a {
     right: 150px;
     top: 100px; }
   .nav__item {
+    position: relative;
     font-size: 30px;
+    display: block;
     font-family: "Raleway";
     text-transform: uppercase;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
   .nav__link {
+    position: relative;
     text-decoration: none;
     color: #ffffff;
-    display: inline-block;
-    padding-bottom: 10px; }
-    .nav__link:hover {
-      font-size: 33px;
-      border-bottom: 2px solid #f84444; }
+    display: inline-block; }
+    .nav__link::after {
+      content: '';
+      position: absolute;
+      display: block;
+      margin-top: 10px;
+      background-color: #f84444;
+      height: 2px;
+      width: 0%;
+      right: 0;
+      -webkit-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+    .nav__link:hover::after {
+      width: 100%; }
   .nav.opened {
     visibility: visible;
     opacity: 0.99;
@@ -98,21 +111,20 @@ a {
     -ms-transform: scale(1);
     transform: scale(1); }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    margin-right: 0px; }
-  to {
-    opacity: 1;
-    margin-right: 50px; } }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    margin-right: 0px; }
-  to {
-    opacity: 1;
-    margin-right: 50px; } }
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top; }
+    .nav__list {
+      right: 0%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      text-align: center; }
+    .nav__item {
+      font-size: 24px; } }
 
 .button {
   background-color: #f84444;
@@ -170,7 +182,36 @@ a {
   .header__logo {
     left: 40px; }
   .header__search {
-    right: 83px; }
+    right: 83px;
+    cursor: pointer;
+    z-index: 2; }
+  .header__search-field {
+    position: absolute;
+    right: 75px;
+    top: 27px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-bottom: 2px solid #42434b;
+    outline: none;
+    width: 225px;
+    padding: 10px 30px 10px 20px;
+    font-family: "Open Sans";
+    visibility: hidden;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s; }
+  .header .active {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
   .header__nav-button {
     background-color: #7c7e88;
     width: 15px;
@@ -839,6 +880,15 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .person:hover .person__img {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .person__img-box {
+    overflow: hidden; }
   .person:last-child {
     margin-right: 0; }
   .person__img {
@@ -881,6 +931,18 @@ a {
   .person__social .link {
     text-decoration: none;
     margin-right: 20px; }
+    .person__social .link .twitter:hover path {
+      fill: #1DA1F2;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      opacity: 1; }
+    .person__social .link .facebook:hover path {
+      fill: #4267B2;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      opacity: 1; }
 
 .team {
   padding: 185px 110px 75px; }
@@ -911,7 +973,7 @@ a {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .team {
-    padding: 135px 35px 40px; }
+    padding: 135px 15px 40px; }
     .team__cards {
       -ms-grid-columns: 100%;
       grid-template-columns: 100%; } }
@@ -990,7 +1052,7 @@ a {
     text-transform: uppercase; }
   .form input::placeholder {
     text-transform: uppercase; }
-  .form input:hover {
+  .form input:hover, .form input:focus {
     border: 2px solid #f84444; }
 
 .form button {
@@ -1048,6 +1110,19 @@ a {
     .footer__social .link {
       text-decoration: none;
       margin-right: 20px; }
+      .footer__social .link svg path {
+        fill: #ffffff;
+        opacity: 1; }
+      .footer__social .link .twitter:hover path {
+        fill: #1DA1F2;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+      .footer__social .link .facebook:hover path {
+        fill: #4267B2;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
       .footer__social .link:last-child {
         margin-right: 0; }
 

@@ -23,22 +23,34 @@
     }
 
     &__item {
+        position: relative;
         font-size: 30px;
+        display: block;
         font-family: $raleway_font;
         text-transform: uppercase;
-        margin-bottom: 20px;
-        
+        margin-bottom: 30px;
     }
 
     &__link {
+        position: relative;
         text-decoration: none;
         color: $white_color;
         display: inline-block;
-        padding-bottom: 10px;
 
-        &:hover {
-            font-size: 33px;
-            border-bottom: 2px solid $light-red_color;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            margin-top: 10px;
+            background-color: $light-red_color;
+            height: 2px;
+            width: 0%;
+            right: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
         }
     }
     &.opened {
@@ -48,15 +60,20 @@
     }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        margin-right: 0px;
-    }
+@media (min-width: 320px) and (max-width: 767px) {
+    .nav {
+        transform-origin: top;
 
-    to {
-        opacity: 1;
-        margin-right: 50px;
+        &__list {
+            right: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        &__item {
+            font-size: 24px;
+        }
     }
 }
 

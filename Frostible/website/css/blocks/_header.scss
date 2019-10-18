@@ -24,6 +24,32 @@
 
   &__search {
     right: 83px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__search-field {
+    position: absolute;
+    right: 75px;
+    top: 27px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-bottom: 2px solid #42434b;
+    outline: none;
+    width: 225px;
+    padding: 10px 30px 10px 20px;
+    font-family: $OpenSans_font;
+    visibility: hidden;
+    transform-origin: right;
+    transform: scale(0);
+    transition: all 0.25s;
+  }
+
+  .active {
+    visibility: visible;
+    transform: scale(1);
+    
   }
 
 

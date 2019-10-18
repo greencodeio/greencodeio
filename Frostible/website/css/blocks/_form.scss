@@ -18,7 +18,7 @@
       text-transform: uppercase;
     }
 
-    &:hover {
+    &:hover, &:focus {
       border: 2px solid $light-red_color;
     }
   }
