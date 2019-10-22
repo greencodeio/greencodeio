@@ -1,0 +1,26 @@
+@import 'nav';
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-size: 36px;
+    text-decoration: none;
+    font-family: $montserrat_font;
+    font-weight: bold;
+
+    .logo-link {
+      text-decoration: none;
+    }
+
+    .dark-blue {
+      color: $dark-blue_color;
+    }
+
+    .light-blue {
+      color: $light-blue_color;
+    }
+  }
+}

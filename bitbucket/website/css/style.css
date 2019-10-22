@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.bg-dark {
+  background-color: #292929; }
+
+.bg-lg {
+  background-color: #f8fcff; }
+
+.contacts {
+  background-color: #292929;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .contacts__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .contacts__social-link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 10px; }
+      .contacts__social-link:last-child {
+        margin-right: 0; }
+  .contacts__link {
+    font-family: "Proxima Nova Lt";
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 45px; }
+    .contacts__link:last-child {
+      margin-right: 0; }
+  .contacts__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .contacts__details .skype-ico::before, .contacts__details .mail-ico::before {
+      content: '';
+      display: inline-block;
+      width: 17px;
+      height: 15px;
+      margin-right: 5px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .contacts__details .skype-ico::before {
+      background-image: url("../img/header-skype.svg"); }
+    .contacts__details .mail-ico::before {
+      background-image: url("../img/mail.svg"); }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.nav__item {
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: "Source Sans Pro"; }
+  .nav__item:last-child {
+    margin-right: 0; }
+
+.nav__link {
+  color: #3c3c3c;
+  text-decoration: none; }
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav-bar__logo {
+    font-size: 36px;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: bold; }
+    .nav-bar__logo .logo-link {
+      text-decoration: none; }
+    .nav-bar__logo .dark-blue {
+      color: #3366cc; }
+    .nav-bar__logo .light-blue {
+      color: #0099ff; }
+
+.header {
+  padding: 0 calc(50% - 960px); }

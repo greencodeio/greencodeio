@@ -1,0 +1,58 @@
+.contacts {
+  background-color: $dark-gray_color;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__social {
+    display: flex;
+
+    &-link {
+      display: flex;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    font-family: $ProximaNova_font;
+    color: $white_color;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__details {
+    display: flex;
+
+    .skype-ico::before, .mail-ico::before {
+      content: '';
+      display: inline-block;
+      width: 17px;
+      height: 15px;
+      margin-right: 5px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .skype-ico::before {
+      background-image: url('../img/header-skype.svg');
+    }
+
+    .mail-ico::before {
+      background-image: url('../img/mail.svg');
+    }
+  }
+}
