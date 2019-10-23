@@ -18,4 +18,17 @@ body {
 
 .bg-lg {
   background-color: #f8fcff;
+  border-bottom: 8px solid $light-blue_color;
+}
+
+.bg-banner {
+  background-image: url('../img/banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.main {
+  padding: 0 calc(50% - 960px);
 }
