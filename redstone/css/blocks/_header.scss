@@ -1,0 +1,11 @@
+@import 'logo';
+
+.header {
+  border-top: 6px solid #888e99;
+  border-bottom: 1px solid #c1c4c9;
+  padding: 35px 0 30px;
+  background-image: -moz-linear-gradient( 90deg, rgb(232,232,232) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(232,232,232) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(232,232,232) 0%, rgb(255,255,255) 100%);
+}
+

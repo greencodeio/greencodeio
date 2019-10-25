@@ -1,0 +1,53 @@
+.rightside-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__phone-img {
+    margin-right: 20px;
+  }
+
+  &__phone {
+    margin-right: 30px;
+
+    & > span {
+      display: block;
+    }
+  }
+
+  &__subtittle {
+    font-family: $OpenSans_font;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7d7987;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+  }
+
+  &__number {
+    font-family: $Lato_font;
+    font-size: 22px;
+    font-weight: 800;
+    color: #424242;
+  }
+
+
+  &__button-link {
+    display: inline-block;
+    font-family: $OpenSans_font;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 17px 31px;
+    background-color: #a175aa;
+    border-radius: 27px;
+
+    &:hover, &:focus {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+
