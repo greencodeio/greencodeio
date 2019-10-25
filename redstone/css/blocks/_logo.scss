@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    margin-right: 9px;
+  }
+
+  &__tittle {
+    display: block;
+    color: #444444;
+    font-size: 25px;
+    font-family: $RaleWay_font;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    &_gray {
+      color: #bcbcbc;
+    }
+  }
+
+  &__capture {
+    font-size: 14px;
+    font-family: $OpenSans_font;
+    font-style: italic;
+    color: #9b9b9b;
+  }
+
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/raleway/stylesheet.css">
+  <link rel="stylesheet" href="fonts/open-sans/stylesheet.css">
+  <link rel="stylesheet" href="fonts/lato/stylesheet.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="logo header__logo col-md-4">
+          <div class="logo__img">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46px"
+              height="40px">
+              <image opacity="0.502" x="0px" y="0px" width="46px" height="40px"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAoCAQAAAAr6QChAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjChkINy8OYA/tAAAFKElEQVRIx73X21NV1x0H8A+HI+HITZARUctRJNTUGwWn3kmQeHSaVB+S8aGTp/ax/1Nf2jrWyXTGTtIo3hJpSZ2qMRgiohIOEQmKILccRIE+uNnuAwef0n6f9u+3fuu71v7d1lp5cmOlYsXmjJs0s4xNgWKlYiZN+jGXQV5O4oNqlSvApFHdvjS3yCZmry3KFWPGqF7tSxdYSv5zv1aqx3cG5KuxWVK/Tw1FbKq8p0baff1mrbdJvXH/cOf15HU+MuisdES3zbsK/NFwIFf6nRkXfBOxSTqq2p/di5LlZ1GX+63H/hTSvMQjfbb7mU7ziDkh4aTeLJsx39qkwW3TucnzHLbBKaNLXDVp0l7THmCPJp+4v8TmhUG7vaEnGphoIDf62mCuuOv0g3oxMfV+0JnTZtDXNlqZm7xCRXTdRehVISGhYpFDouhRoWIpeaUmh4l4O2a/bZGJD5QqUqTUg4h2m/2RDQ7jsCaVL8U4aNSqyLgrnkYmbjHrttlAmpBnBfJMRCK2S74vQ/mpKxr8xpSLbrwkP6jVXW1GQiKY069RPEu3GHFVbkQK7IVLvlAh5Zgi7THrHNDlpMdLaIYkFn5wGVRKZBUXzHrspC4HrIvZZdZZ8zmmpo068lryI0azym0B886atSsmqTfwYqFalZGaHXNZjUPLUh9S47KxUM5TqVZhEKFeybgK3waDNT40Y0y77kBzS61mJdpkvIh4loSUX7rpViT8B5Up8HGQzqO25mvyzG0w7qFpa+xWqDdwVLcZe+22SrFNbqDJhB2Oq3bB+YA45oijpnXp0BcEuFEi7p4tyozhubvuanfIHk/8J5jYYcBWm60O99jiiZu6It5ussdVlzwLNWU26467rlHK38JceeYzld7WHeZzWlqhOh8G8sfuRduTEm+777OIJl/KStdjBrTZ6oSkgnDwc8WqsoI3HWlno1nUVCn2eSgVSDphqzYDcXTIOKbWmD7nPMe4CceMhZmT8WmkVOas8p5EmHZlJoyDFY7YqEzcGV9lN66fHHHsk3JHh8HwKC5VsvhUURR+xTz1l8hInY+UBinxiQLV9jkuoSNmvZQup6Ujp/w7JheVdaHy8Ls8KJQFDJn0TijNSDutS8r6fC3KnJYJB9+Qst1534WapP3etYsgz3/hLZVmwtqc8dxuCd+HGTdvwE4FcXXuB2YrbJRUb41/ux5S79Nq1i2dWgLNZaUaNLmoI9Bct9oem/RI6/McY+6riysJe/imoPxPheWf57gGX2mTUR2S9xh0QUrKGmfMY85ZfQ5q8Kuw/J/aFjcSerPfKeOeRDrkdg2uuBSG/lUSZJwxoVlveJ52u2O1Ug/DyIzEpNUqAdN6DUeoy7ToD6hz4ZJ+LcpCed6w3qDAStRKx1yT72jOa11SuXNeh3PKJXPo8xyV71rcQ//UqmDJMUeVzKLr0WIMyyxqE+SrkPKmix7G0W5Kqz8Yd9OVsG/H1BiKdPFceGFIjVjYGuKaNSg15e8LBzQ39EvaqVlnZK/dxiL/UmLec8wHEYJZ1yI+Z5Vm/b6QfsmykAPDhj3ye5Uh+Zx/Ze1yg3FTGLchPLtkXUapxHnfL4jRxjViRP2yLqg1IiNjRO2yNvVGjLwSo+Q/6rNTdc5pO6zVY86cHmvtyGlTbae+6BMgSj6vXcb7Yad+hbVS0q6Cq9JS1i6xSXhfRnv0kpJ9P5/2yAGbDUcuDGxzTNxfTQVbeKDRWyY9itgkfWCd02F94v/8bOF/+uBaWOAneCr+F5UUycaZ//mxAAAAAElFTkSuQmCC" />
+            </svg>
+          </div>
+          <div class="logo__text">
+            <span class="logo__tittle">
+              psychology
+              <span class="logo__tittle_gray">care</span>
+            </span>
+            <span class="logo__capture">We Care you & your family</span>
+          </div>
+        </div>
+        <div class="rightside-info rightside-info__header">
+          <div class="rightside-info__phone-img">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px"
+              height="34px">
+              <image opacity="0.6" x="0px" y="0px" width="34px" height="34px"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAQAAACQTsNJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjChkIOQLVPH4WAAADYElEQVRIx5XWW29UZRTG8d/MtLVFoCAg2FKwhVJCCIKRNBxMCoYIhFBEEvUGNR4Sgl/Da42JRmMgJl6oX0ATDd6QeIhypqWd0kILtGVa2jJ0yrSdYbyYzXRmSjv4XO31vmv/93rXWnvtHZLVEvtsUuWOn3UrVKUmm61WJS0t6aZLBkzMOITACz4SckbCTmv94EIB5GVvuSfqlrAyS22wQtzvzkvPOK31qROeDaxDPrO5ALJEXVFs9d72hXctzJoRy3zillOSgUPUUvtcygs3KV4EGXPVbS3qtZkmotVCX5nKc4lqVlN0pNmK6bTXIu1ZyFk9BdtpMa+7bjRvLWyVbbaokTIuA+KGHTZsIOKAPw0XPWVYMzrzVmq9p1Gl9Vqs1ushuGuJV5wvk1L+hGDjFhVhTxkzKaTJUSd9aQT8YavVYQ+snIVYrlZ7wUrSXZPI6PC5tKMi4LYBW8MGNBQhFjiu3+U5UzrhJxvVEEDrwrrUqM5zKfOOxb6Xmqcy3UasD67vqwjrVm5jnsM2jU67V6LA47mcJVWEjbhmR3DCbDEfzmquYpVb7v7MHWGP/K1WU26pQ4UtJSALDOoIrteJRRBXr8EFj8CkKvucy70GT1LKtaDEEUdcDyPlV/Veyrn8JubYvJGkPcjFFBfN5mJUtVedC96gtJsOWlrUKXPF1GbwcUJ77VCdu23coFbloiUhGVMyjyHThhwxoj+wY0a8IenmU0STV9ohEa0uSgR2v4RjEnr/D4RuDXa7aDKw+yS8KV00KEpAMqK2a3I11/K9RrWq0hVMEAjbZq8XpWbmTaQAOem6PWq1BT3DHTEHNeoJJsgyH9ghY41d6tzJHj5SFNm4Hvut0JHDDGq33R5JE1Y6IeUbZ5x1y3YtBsVmQ7jvhgNqdeQO9cA/qrTYqlmf08bAsL9UazVkYDaEUVGv2aAjN77TOl0Wd8UveSP9kXblDukJzZHwlT6U8V2ub+bWSZHIHFsJVzQ4YKwkZtrOyJybSReVOaJaX8FXqVjrrInMs53R5bYWuyTEctUqVKXj2uaDwJB/LbZfgwn38louq3Ifq/RjKQhT2nWr12KzsPG8YfWM99X52nCoJCSrsHWabTKl3w2Dpj1vtyrf6nv8f/J0CnnOeo1WWahCQpcz2a/Cf6i4GAQEUSM7AAAAAElFTkSuQmCC" />
+            </svg>
+          </div>
+          <div class="rightside-info__phone">
+            <span class="rightside-info__subtittle">Call Us now</span>
+            <span class="rightside-info__number">1800 456 7890</span>
+          </div>
+          <div class="rightside-info__button">
+            <a href="" class="rightside-info__button-link">Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="nav-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">home</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link_dropdown">services</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link_dropdown">about us</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link_dropdown">pages</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">tesmonials</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link_dropdown">blog</a>
+              </li>
+              <li class="nav__item ">
+                <a href="" class="nav__link">contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
