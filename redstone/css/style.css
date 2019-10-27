@@ -349,3 +349,10 @@
       text-decoration: none;
       background-color: #68a4ec;
       color: #ffffff; }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .title__description {
+    font-size: 36px; }
+  .title__button {
+    font-size: 10px;
+    padding: 17px 18px; } }
