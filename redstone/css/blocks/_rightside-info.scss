@@ -30,6 +30,11 @@
     font-size: 22px;
     font-weight: 800;
     color: #424242;
+
+    &:hover, &:active {
+      text-decoration: none;
+      color: #424242;
+    }
   }
 
 
@@ -51,3 +56,8 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 992px) {
+  .rightside-info {
+    display: none;
+  }
+}

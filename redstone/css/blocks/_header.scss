@@ -1,4 +1,5 @@
 @import 'logo';
+@import 'blocks/rightside-info';
 
 .header {
   border-top: 6px solid #888e99;
@@ -7,5 +8,62 @@
   background-image: -moz-linear-gradient( 90deg, rgb(232,232,232) 0%, rgb(255,255,255) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(232,232,232) 0%, rgb(255,255,255) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(232,232,232) 0%, rgb(255,255,255) 100%);
+
+  &__navToggle {
+    position: relative;
+    background-color: #424242;
+    width: 68px;
+    height: 28px;
+    border-bottom: 12.5px solid transparent;
+    border-top: 12.5px solid transparent;
+    background-clip: content-box;
+    display: none;
+    cursor: pointer;
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      right: 15px;
+      position: absolute;
+      background-color: inherit;
+      height: 3px;
+      width: 38px;
+      will-change: rotate;
+      transition: all 0.5s ease;
+    }
+
+    &::before {
+      top: -10.5px;
+    }
+
+    &::after {
+      bottom: -10.5px;
+    }
+
+    &_opened {
+      background: transparent;
+
+        &::before, &::after {
+          background-color: #424242;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+  
+        &::before {
+          transform: rotate(135deg);
+        }
+  
+        &::after {
+          transform: rotate(-135deg);
+        }
+      }
+  }
 }
 
+@media (min-width: 320px) and (max-width: 992px) {
+  .header {
+    &__navToggle {
+      display: block;
+    }
+  }
+}

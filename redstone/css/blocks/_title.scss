@@ -1,0 +1,42 @@
+.title {
+    position: absolute;
+    bottom: 130px;
+
+    &__description {
+        color: #ffffff;
+        text-align: center;
+        font-family: $RaleWay_font;
+        font-weight: 800;
+        font-size: 48px;
+        margin-bottom: 45px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        display: inline-block;
+        font-family: $OpenSans_font;
+        color: #000000;
+        font-size: 15px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 17px 31px;
+        margin-right: 30px;
+        background-color: #ffffff;
+        border-radius: 27px;
+        transition: 0.2s ease-in-out;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover, &:active {
+            text-decoration: none;
+            background-color: #68a4ec;
+            color: #ffffff;
+        }
+    }
+}

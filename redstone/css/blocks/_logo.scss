@@ -6,6 +6,8 @@
     margin-right: 9px;
   }
 
+  &__text {}
+
   &__tittle {
     display: block;
     color: #444444;
@@ -25,6 +27,12 @@
     font-style: italic;
     color: #9b9b9b;
   }
+}
 
-
+@media (min-width: 320px) and (max-width: 992px) {
+  .logo {
+    &__text {
+      display: none;
+    }
+  }
 }
