@@ -13,6 +13,12 @@ for (let i = 0; i < blockLink.length; i++) {
         for (let count = 0; count < dropDownList.length; count++) {
             if (i === count) {
                 dropDownList[count].classList.toggle('nav__item_dropdown-active');
+
+                for (let counterList = 0; counterList < dropDownList.length; counterList++) {
+                    if (i !== counterList) {
+                        dropDownList[counterList].classList.remove('nav__item_dropdown-active');
+                    }
+                }
             }
         }
         event.preventDefault();
