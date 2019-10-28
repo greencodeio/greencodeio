@@ -306,7 +306,7 @@
     z-index: -1;
     height: inherit; }
     .banner .slider img {
-      height: 745px;
+      height: 100vh;
       -o-object-fit: cover;
       object-fit: cover;
       -o-object-position: center;
@@ -314,7 +314,7 @@
 
 .title {
   position: absolute;
-  bottom: 130px; }
+  bottom: 0; }
   .title__description {
     color: #ffffff;
     text-align: center;
