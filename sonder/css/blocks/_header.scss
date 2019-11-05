@@ -1,0 +1,19 @@
+@import 'logo';
+@import 'nav';
+@import 'call-back';
+
+.header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 2px #ECEDF3;
+
+  &__logo {
+    margin-left: 50px;
+  }
+
+  &__call-back {
+    margin-right: 50px;
+  }
+}

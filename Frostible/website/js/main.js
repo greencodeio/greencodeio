@@ -11,4 +11,3 @@ menuTogle.addEventListener('click', function () {
 searchButton.addEventListener('click', function () {
     searchField.classList.toggle('active');
 })
-

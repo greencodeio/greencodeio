@@ -1,0 +1,24 @@
+.call-back {
+  display: flex;
+  align-items: center;
+
+  &__number, &__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.2px;
+    
+  }
+
+  &__number {
+    margin-right: 29px;
+    color: $black_color;
+  }
+
+  &__link {
+    display: inline-block;
+    border-radius: 20px;
+    color: $white_color;
+    padding: 11px 20px;
+  }
+}
