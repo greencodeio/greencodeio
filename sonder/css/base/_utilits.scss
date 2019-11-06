@@ -8,6 +8,7 @@ body {
   font-family: $montserrat_font;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -23,4 +24,5 @@ a {
 
 .button {
   background-color: $blue_color;
+  display: inline-block;
 }

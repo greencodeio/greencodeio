@@ -1,0 +1,57 @@
+.benefits {
+  margin-top: 115px;
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 68px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.2px;
+  }
+
+  &__block {
+    margin-left: 95px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+  }
+
+  &__description {
+    position: relative;
+    max-width: 261px;
+    margin-left: 74px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+  }
+
+  .target::before,  .rocket::before, .graph::before, .clock::before{
+    content: '';
+    position: absolute;
+    left: -74px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+  }
+
+  .target::before {
+    background-image: url('../img/benefits/target.svg');
+  }
+
+  .rocket::before {
+    background-image: url('../img/benefits/rocket.svg');
+  }
+
+  .graph::before {
+    background-image: url('../img/benefits/graph.svg');
+  }
+
+  .clock::before {
+    background-image: url('../img/benefits/clock.svg');
+  }
+}
