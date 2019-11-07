@@ -1,3 +1,5 @@
+@import 'card';
+
 .services {
   margin-top: 159px;
 
@@ -13,9 +15,17 @@
 
   &__capture {
     margin: 0;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 16px;
     line-height: 34px;
     letter-spacing: -0.177778px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    justify-content: space-between;
+    margin-bottom: 136px;
   }
 }

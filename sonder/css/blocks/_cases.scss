@@ -1,0 +1,39 @@
+.cases {
+  margin-top: 75px;
+
+  & .indent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    background-image: url('../img/cases_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 577px;
+    height: 347px;
+  }
+
+  &__text {
+    max-width: 406px;
+    margin-left: 95px;
+  }
+
+  &__heading {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+  }
+  
+}

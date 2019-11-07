@@ -224,6 +224,98 @@ a {
   .benefits .clock::before {
     background-image: url("../img/benefits/clock.svg"); }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 24px 33px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 25px #ECF0F7;
+  box-shadow: 0px 10px 25px #ECF0F7;
+  border-radius: 8px; }
+  .card__logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 10px; }
+  .card .target {
+    background-image: url("../img/services/target.svg"); }
+  .card .phone {
+    background-image: url("../img/services/phone.svg"); }
+  .card .site {
+    background-image: url("../img/services/site.svg"); }
+  .card .magnifier {
+    background-image: url("../img/services/magnifier.svg"); }
+  .card__title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    margin-bottom: 12px; }
+  .card__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 35px; }
+  .card__item {
+    position: relative;
+    font-size: 14px;
+    line-height: 28px;
+    padding-left: 23px; }
+    .card__item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block;
+      background-image: url("../img/mark.svg");
+      width: 11px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+  .card__price {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    margin-bottom: 10px; }
+    .card__price .colored {
+      font-weight: bold;
+      color: #2E58D1; }
+  .card__link {
+    -webkit-box-shadow: 0px 10px 16px #E3E8F3;
+    box-shadow: 0px 10px 16px #E3E8F3;
+    border-radius: 29px;
+    color: #ffffff;
+    padding: 11px 26px;
+    font-size: 14px;
+    line-height: 17px; }
+
+@media (min-width: 1024px) and (max-width: 1253px) {
+  .card__item {
+    font-size: calc( (100vw - 1024px)/(1253 - 1024) * (14 - 9) + 9px); }
+  .card__link {
+    font-size: calc( (100vw - 1024px)/(1253 - 1024) * (14 - 12) + 12px); } }
+
 .services {
   margin-top: 159px; }
   .services__heading {
@@ -236,7 +328,51 @@ a {
     letter-spacing: -0.2px; }
   .services__capture {
     margin: 0;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 16px;
     line-height: 34px;
     letter-spacing: -0.177778px; }
+  .services__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 24% 24% 24% 24%;
+    grid-template-columns: 24% 24% 24% 24%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 136px; }
+
+.cases {
+  margin-top: 75px; }
+  .cases .indent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .cases__img {
+    background-image: url("../img/cases_bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 577px;
+    height: 347px; }
+  .cases__text {
+    max-width: 406px;
+    margin-left: 95px; }
+  .cases__heading {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    margin-bottom: 30px; }
+  .cases__description {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0; }
