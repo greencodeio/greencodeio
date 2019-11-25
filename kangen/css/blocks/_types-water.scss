@@ -1,0 +1,33 @@
+.types-water {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  &__drinking, &__beauty, &__acidic {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding: 47px 0 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  &__drinking {
+    background-color: #00b3e9;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+
+  &__beauty {
+    background-color: #2cdfff;
+    width: 45%;
+  }
+
+  &__acidic {
+    background-color: #2dcec8;
+    width: 45%;
+  }
+}
+

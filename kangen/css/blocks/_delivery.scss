@@ -1,0 +1,31 @@
+.delivery {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__map {
+    height: 230px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    border-radius: 27px;
+    background-image: -moz-linear-gradient( 90deg, rgb(45,206,200) 0%, rgb(74,135,186) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(45,206,200) 0%, rgb(74,135,186) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(45,206,200) 0%, rgb(74,135,186) 100%);
+    padding: 23px 37px 19px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
