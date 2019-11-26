@@ -1,0 +1,34 @@
+.certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 15px;
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  &__item {
+    display: block;
+    background-color: #00b3e9;
+    border-radius: 50%;
+    width: 157px;
+    height: 157px;
+
+  }
+}

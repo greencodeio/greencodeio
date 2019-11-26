@@ -181,3 +181,173 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none; }
+
+.slider-block {
+  position: relative;
+  min-width: 100%;
+  height: 140px; }
+  .slider-block__slider {
+    position: relative;
+    width: inherit;
+    height: inherit; }
+  .slider-block__slides {
+    position: absolute;
+    width: 100%;
+    height: inherit; }
+  .slider-block .slide-1 {
+    background-color: #2dcec8; }
+  .slider-block .slide-2 {
+    background-color: #2cdfff; }
+  .slider-block .slide-3 {
+    background-color: #00b3e9; }
+  .slider-block__prev, .slider-block__next {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer; }
+  .slider-block__prev {
+    left: 5px; }
+  .slider-block__next {
+    right: 5px; }
+
+.partners {
+  padding: 0 15px;
+  margin-top: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .partners__heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 30px; }
+  .partners__slider-block {
+    padding: 0 40px;
+    margin-bottom: 30px; }
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 15px; }
+  .benefits__heading {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px; }
+  .benefits__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .benefits__item {
+    margin-bottom: 30px;
+    font-weight: 300; }
+    .benefits__item:last-child {
+      margin-bottom: 0; }
+
+.property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 15px; }
+  .property__heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 30px; }
+  .property__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .property__item {
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: calc( (100vw - 320px) / (768 - 320) * (16 - 10.5) + 10.5px);
+    border: 2px solid #ececec;
+    border-radius: 20px;
+    padding-left: 35px;
+    padding-right: 13px;
+    padding-top: 18px;
+    padding-bottom: 17px; }
+    .property__item:last-child {
+      margin-bottom: 0; }
+    .property__item::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 14px;
+      height: 17px;
+      background-image: url("../img/drop.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 12px; }
+
+.certificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 15px; }
+  .certificate__heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 30px; }
+  .certificate__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 45%;
+    grid-template-columns: 45% 45%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-grid-row-align: center;
+    align-self: center; }
+  .certificate__item {
+    display: block;
+    background-color: #00b3e9;
+    border-radius: 50%;
+    width: 157px;
+    height: 157px; }

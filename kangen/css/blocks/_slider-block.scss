@@ -1,0 +1,44 @@
+.slider-block {
+  position: relative;
+  min-width: 100%;
+  height: 140px;
+
+  &__slider {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  }
+
+  &__slides {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+  }
+
+  .slide-1 {
+    background-color: #2dcec8;
+  }
+
+  .slide-2 {
+    background-color: #2cdfff;
+  }
+
+  .slide-3 {
+    background-color: #00b3e9;
+  }
+
+  &__prev, &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__prev {
+    left: 5px;
+  }
+
+  &__next {
+    right: 5px;
+  }
+}
