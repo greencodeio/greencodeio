@@ -7,6 +7,15 @@ body {
   padding: 0;
   background-color: #fff;
   font-family: 'Roboto';
-  //padding: 0 calc(50% - 582px);
 }
 
+.section {
+  position: relative;
+  padding: 0 calc(50% - 472.5px);
+}
+
+@media (min-width: 1024px) {
+  .bg_g {
+    background-color: #f3f3f3;
+  }
+}
