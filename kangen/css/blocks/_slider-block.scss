@@ -42,3 +42,41 @@
     right: 5px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slider-block {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+    &__prev {
+      left: 80px;
+    }
+  
+    &__next {
+      right: 80px;
+    }
+    
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-block {
+    
+    &__slider {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &__slides {
+      position: static;
+      border-radius: 20px;
+      width: 30%;
+    }
+
+    &__prev, &__next {
+      display: none;
+    }
+  }
+}
+

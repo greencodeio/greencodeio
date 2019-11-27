@@ -19,6 +19,24 @@
     padding: 0 40px;
     margin-bottom: 30px;
   }
-  
 }
 
+@media (min-width: 1024px) {
+  .partners {
+    max-width: 945px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 80px;
+
+    &__heading {
+      padding: 0;
+      margin-bottom: 80px;
+      font-size: 36px;
+    }
+
+    &__slider-block {
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+}

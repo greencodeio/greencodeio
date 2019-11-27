@@ -1,0 +1,50 @@
+.buy-water {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 15px;
+
+    &__heading {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 30px;
+
+        .more {
+            display: none;
+        }
+
+        &_button {
+            color: #00b3e9;
+            text-decoration: none;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .buy-water {
+
+        .dots {
+            display: none;
+        }
+
+        .more {
+            display: inline-block;
+        }
+
+        .buy-water__description_button {
+            display: none;
+        }
+    }
+}
+

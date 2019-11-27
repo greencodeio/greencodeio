@@ -29,3 +29,26 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    width: 945px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    border-bottom: none;
+    padding-top: 35px;
+    
+
+    &__logo {
+      width: 135px;
+      height: 120px;
+    }
+
+    &__inst {
+      display: none;
+    }
+  }
+}

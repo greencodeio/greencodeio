@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 
+  &:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
   &__img {
     background-color: #00b3e9;
     height: 245px;
@@ -19,5 +23,43 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
+    margin: 0;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+    &:nth-child(even) {
+      flex-direction: row;
+    }
+  
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__heading {
+      margin-top: 0;
+    }
+    
+    &__text-section {
+      margin-right: 30px;
+
+      &:nth-child(even) {
+        margin-right: 0;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    margin-bottom: 80px;
   }
 }

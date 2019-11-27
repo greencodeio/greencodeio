@@ -34,3 +34,44 @@
     font-weight: 300;
   }
 }
+
+@media (min-width: 1024px) {
+  .banner {
+    position: relative;
+    height: 650px;
+    max-width: 945px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 200px;
+
+
+    &__bg {
+      position: absolute;
+      top: 150px;
+      right: -30px;
+      height: 500px;
+      
+      img {
+        object-position: right;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 510px;
+      margin-top: 0;
+    }
+
+    &__heading {
+      font-size: 60px;
+    }
+
+    &__description {
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+}

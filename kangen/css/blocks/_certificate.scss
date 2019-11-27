@@ -18,9 +18,9 @@
     padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 100%;
+    grid-gap: 30px;
     justify-content: space-between;
-    align-self: center;
   }
 
   &__item {
@@ -29,6 +29,32 @@
     border-radius: 50%;
     width: 157px;
     height: 157px;
+    margin: 0 auto;
 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .certificate {
+    margin-bottom: 50px;
+    
+    &__list {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .certificate {
+    padding: 145px 0 170px;
+    background-color: #f3f3f3;
+
+    &__list {
+      max-width: 945px;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      justify-content: space-evenly;
+    }
   }
 }

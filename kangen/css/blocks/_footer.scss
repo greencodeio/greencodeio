@@ -1,0 +1,12 @@
+.footer {
+    background-color: #f3f3f3;
+    padding: 15px 15px;
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 90px;
+    }
+}
