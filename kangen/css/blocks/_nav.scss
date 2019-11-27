@@ -1,7 +1,41 @@
 .nav {
+  position: relative;
 
   &__list {
-    display: none;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    z-index: 5;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100vw;
+    height: 256px;
+    left: -15px;
+    top: 47px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
+    background-color: #fff;
+    transition: all 0.3s ease;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  &__opened {
+    visibility: visible;
+    transform: scaleY(1);
+  }
+
+  &__item {
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  &__link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
   }
 
   &__toggle-button {
@@ -21,6 +55,7 @@
       background-color: inherit;
       width: 100%;
       height: 5px;
+      transition: all 0.3s ease;
     }
 
     &::before {
@@ -29,6 +64,22 @@
 
     &::after {
       bottom: -10px;
+    }
+  }
+
+  &__toggle-active {
+    background-color: transparent;
+
+    &::before {
+      transform: rotate(135deg);
+      background-color: #b3b0b0;
+      top: 0;
+    }
+
+    &::after {
+      transform: rotate(-135deg);
+      background-color: #b3b0b0;
+      bottom: 0;
     }
   }
 }
@@ -42,14 +93,22 @@
     }
 
     &__list {
+      position: static;
       display: flex;
       list-style: none;
       margin: 0;
       padding: 0;    
+      visibility: visible;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(1);
+      box-shadow: none;
     }
 
     &__item {
       margin: 0 15px;  
+      border-bottom: none;
 
       &:first-child {
         margin-left: 0;
@@ -61,6 +120,7 @@
     }
 
     &__link {
+      padding: 0;
       font-size: 14px;
       text-decoration: none;
       text-transform: uppercase;

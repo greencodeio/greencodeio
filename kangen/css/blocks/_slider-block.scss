@@ -13,6 +13,8 @@
     position: absolute;
     width: 100%;
     height: inherit;
+    opacity: 1;
+    transition: all 0.5s ease;
   }
 
   .slide-1 {
@@ -25,6 +27,10 @@
 
   .slide-3 {
     background-color: #00b3e9;
+  }
+
+  .opacity-zero {
+    opacity: 0;
   }
 
   &__prev, &__next {
