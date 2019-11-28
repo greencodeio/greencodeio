@@ -8,6 +8,36 @@
   &__heading {
     display: none;
   }
+
+  .content-wrap {
+    position: relative;
+    height: 590px;
+
+    .opacity-zero {
+      opacity: 0;
+    }
+    
+
+    .dots {
+      position: absolute;
+      display: flex;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .dot-active {
+        background-color: #2cdfff;
+      }
+
+      .dot-1, .dot-2, .dot-3 {
+        background-color: #00b3e9;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 6px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -21,6 +51,19 @@
       text-align: center;
       margin: 0;
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    .content-wrap {
+      position: static;
+      height: 100%;
+
+      .dots {
+        display: none;
+      }
     }
   }
 }
@@ -39,6 +82,11 @@
       text-align: center;
       margin: 0;
       margin-bottom: 80px;
+    }
+    
+    .content-wrap {
+      position: relative;
+      height: 100%;
     }
 
     

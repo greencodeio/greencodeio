@@ -1,15 +1,29 @@
 .content {
+  position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  transition: all 1s ease;
+  opacity: 1;
 
   &:nth-child(even) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   &__img {
-    background-color: #00b3e9;
     height: 245px;
     width: 100%;
+  }
+
+  .img-1 {
+    background-color: #00b3e9;
+  }
+
+  .img-2 {
+    background-color: #2cdfff;
+  }
+
+  .img-3 {
+    background-color: #2dcec8;
   }
 
   &__heading {
@@ -30,6 +44,7 @@
 
 @media (min-width: 768px) {
   .content {
+    position: static;
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 30px;

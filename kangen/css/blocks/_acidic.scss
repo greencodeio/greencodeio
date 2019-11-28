@@ -1,0 +1,49 @@
+.line-bg {
+  width: 100%;
+  height: 60px;
+  background: url('../img/line-img.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.view-block {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: flex-end;
+
+  .counter {
+    margin-right: 30px;
+    font-size: 16px;
+  }
+
+  .view-list {
+    display: flex;
+    
+    .view-item {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #00b3e9;
+
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.acidic {
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .line-bg {
+    height: 320px;
+  }
+}
