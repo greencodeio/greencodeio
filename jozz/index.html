@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <style>
+    @font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-SemiBoldItalic.eot);src:local("Open Sans SemiBold Italic"),local("OpenSans-SemiBoldItalic"),url(fonts/OpenSans/OpenSans-SemiBoldItalic.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-SemiBoldItalic.woff) format("woff"),url(fonts/OpenSans/OpenSans-SemiBoldItalic.ttf) format("truetype");font-weight:600;font-style:italic;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-LightItalic.eot);src:local("Open Sans Light Italic"),local("OpenSans-LightItalic"),url(fonts/OpenSans/OpenSans-LightItalic.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-LightItalic.woff) format("woff"),url(fonts/OpenSans/OpenSans-LightItalic.ttf) format("truetype");font-weight:300;font-style:italic;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-Bold.eot);src:local("Open Sans Bold"),local("OpenSans-Bold"),url(fonts/OpenSans/OpenSans-Bold.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-Bold.woff) format("woff"),url(fonts/OpenSans/OpenSans-Bold.ttf) format("truetype");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-ExtraBoldItalic.eot);src:local("Open Sans ExtraBold Italic"),local("OpenSans-ExtraBoldItalic"),url(fonts/OpenSans/OpenSans-ExtraBoldItalic.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-ExtraBoldItalic.woff) format("woff"),url(fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf) format("truetype");font-weight:800;font-style:italic;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-Light.eot);src:local("Open Sans Light"),local("OpenSans-Light"),url(fonts/OpenSans/OpenSans-Light.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-Light.woff) format("woff"),url(fonts/OpenSans/OpenSans-Light.ttf) format("truetype");font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-Italic.eot);src:local("Open Sans Italic"),local("OpenSans-Italic"),url(fonts/OpenSans/OpenSans-Italic.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-Italic.woff) format("woff"),url(fonts/OpenSans/OpenSans-Italic.ttf) format("truetype");font-weight:400;font-style:italic;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-Regular.eot);src:local("Open Sans Regular"),local("OpenSans-Regular"),url(fonts/OpenSans/OpenSans-Regular.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-Regular.woff) format("woff"),url(fonts/OpenSans/OpenSans-Regular.ttf) format("truetype");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-SemiBold.eot);src:local("Open Sans SemiBold"),local("OpenSans-SemiBold"),url(fonts/OpenSans/OpenSans-SemiBold.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-SemiBold.woff) format("woff"),url(fonts/OpenSans/OpenSans-SemiBold.ttf) format("truetype");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-ExtraBold.eot);src:local("Open Sans ExtraBold"),local("OpenSans-ExtraBold"),url(fonts/OpenSans/OpenSans-ExtraBold.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-ExtraBold.woff) format("woff"),url(fonts/OpenSans/OpenSans-ExtraBold.ttf) format("truetype");font-weight:800;font-style:normal;font-display:swap}@font-face{font-family:"Open Sans";src:url(fonts/OpenSans/OpenSans-BoldItalic.eot);src:local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(fonts/OpenSans/OpenSans-BoldItalic.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSans/OpenSans-BoldItalic.woff) format("woff"),url(fonts/OpenSans/OpenSans-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic;font-display:swap}*,::after,::before{box-sizing:border-box}ul[class]{padding:0}body,h3,li,ul[class]{margin:0}html{scroll-behavior:smooth;font-size:10px}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}ul[class]{list-style:none}img{max-width:100%;display:block}input{font:inherit}@media (prefers-reduced-motion:reduce){*{-webkit-animation-duration:0s!important;animation-duration:0s!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}body{background:#27323b;font-family:"Open Sans",sans-serif;color:#fff}.o-link{text-decoration:none;color:#fff}.o-container{max-width:540px;width:100%;margin:0 auto;padding:0 10px}@media (min-width:768px){.o-container{max-width:720px;padding:0}}@media (min-width:992px){.o-container{max-width:960px;padding:0}}@media (min-width:1200px){.o-container{max-width:1140px;padding:0}}.c-nav{position:absolute;left:0;top:0;width:100%;height:calc(100% - 52px - 124px)}.c-nav__list{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.c-nav__link{display:block;font-size:2.2rem;text-align:center;padding:10px 20px}@media (min-width:992px){.c-nav{position:static;left:initial;top:initial;width:-webkit-min-content;width:-moz-min-content;width:min-content}.c-nav__list{position:static;left:initial;top:initial;-webkit-transform:translate(0);transform:translate(0);display:-webkit-box;display:flex}.c-nav__item{margin-right:5px}.c-nav__item:last-child{margin-right:0}.c-nav__link{font-size:1.6rem;padding:10px 15px;border-radius:10px}}.c-header{padding:10px 0;margin-bottom:15px;background:#27323b;position:-webkit-sticky;position:sticky;top:0;left:0;z-index:50}.c-header__container{display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center}.c-header__nav{background:rgba(36,56,60,.98);-webkit-transform:scale(0);transform:scale(0);visibility:hidden;opacity:0;z-index:5}.c-header__logo-container{width:100px;height:49px}.c-header__logo-link{display:block;width:100%;height:100%;background-image:url(img/main-logo.svg);background-size:contain;background-repeat:no-repeat;background-position:center}.c-header__interaction-section{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.c-header__register-btn{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;background-color:#d45a5f;padding:12px 30px;font-size:1.4rem;border-radius:10px;text-transform:uppercase;font-weight:600;margin-bottom:10px}.c-header__enter-btn{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;padding:12px 30px;border:2px solid #fff;border-radius:10px;text-transform:uppercase;font-weight:600;font-size:1.4rem}@media (min-width:768px){.c-header__interaction-section{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row}.c-header__register-btn{margin-bottom:0;margin-right:15px}}@media (min-width:992px){.c-header{position:-webkit-sticky;position:sticky}.c-header__nav{display:block;background:inherit;visibility:visible;opacity:1;-webkit-transform:scale(1);transform:scale(1)}.c-header__logo-container{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}}.c-main__banner{margin-bottom:15px}.c-category-games{overflow-x:scroll}.c-category-games__list{display:-webkit-box;display:flex;flex-wrap:nowrap}.c-category-games__item{margin-right:10px;width:100%}.c-category-games__item:last-child{margin-right:0}.c-category-games__link{text-transform:uppercase;width:-webkit-max-content;width:-moz-max-content;width:max-content;font-size:1.4rem;display:-webkit-box;display:flex;padding:10px;font-weight:700}@media (min-width:768px){.c-category-games{overflow-x:hidden}.c-category-games__list{-webkit-box-pack:space-evenly;justify-content:space-evenly}.c-category-games__item{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;margin-right:0}.c-category-games__link{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center}.c-category-games__icon{width:40px;height:40px;background-position:center;background-repeat:no-repeat;background-size:contain;margin-bottom:5px}.c-category-games__icon.all-games{background-image:url(img/icons/icon-all_game.svg)}.c-category-games__icon.slots{background-image:url(img/icons/icon-slots.svg)}.c-category-games__icon.jackpots{background-image:url(img/icons/icon-jackpot.svg)}.c-category-games__icon.table-games{background-image:url(img/icons/icon-table.svg)}.c-category-games__icon.video-poker{background-image:url(img/icons/icon-poker.svg)}.c-category-games__icon.lottery{background-image:url(img/icons/icon-lottery.svg)}}@media (min-width:992px){.c-category-games__link{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row}.c-category-games__icon{margin-right:5px}}.c-slots{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center}.c-slots__filter-devs{position:relative}.c-slots__devs-select-field{border:2px solid #0afbda;border-radius:5px;padding:10px 20px 10px 10px;color:#0afbda;font-size:1.4rem;letter-spacing:1.2px;position:relative}.c-slots__devs-select-field::after{content:"";position:absolute;width:10px;height:20px;background-image:url(img/icons/arrow-left.svg);background-position:center;background-repeat:no-repeat;background-size:contain;top:50%;right:15px;-webkit-transform:rotate(180deg) translate(-50%,50%);transform:rotate(180deg) translate(-50%,50%)}.c-slots__devs-list{display:none;position:absolute;width:100%;border:2px solid #0afbda;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-top:none;background-color:rgba(36,50,60,.9)}.c-slots__devs-item{color:#0afbda;letter-spacing:1.2px;font-size:1.4rem;line-height:4rem;padding:5px 15px}.c-slots__devs-item.selected{color:#fff;text-shadow:0 0 4px #fff}.c-slots__filter-devs{-webkit-box-ordinal-group:3;order:2;width:60%}.c-slots__filter-input{-webkit-box-ordinal-group:2;order:1;width:100%;margin-bottom:15px}.c-slots__search-holder{position:relative}.c-slots__search-holder::before{content:"";position:absolute;top:50%;left:30px;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:22px;height:22px;background-image:url(img/icons/search.svg);background-repeat:no-repeat;background-position:center;background-size:contain}.c-slots__search{padding:0 20px 0 60px;color:#c2c2c2;font-size:1.4rem;letter-spacing:1.2px;border:none;outline:0;background-color:#4c5e6b;border-radius:5px;height:40px;width:100%}.c-slots__filter-holder{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center;margin-bottom:50px;width:100%}.c-slots__list{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center}.c-slots__item{position:relative;max-width:236px;margin-bottom:10px}.c-slots__img{width:100%}.c-slots__overlay{position:absolute;width:100%;height:100%;z-index:1;top:0;left:0;visibility:hidden;opacity:0;padding:10px;text-align:center}.c-slots__overlay::after,.c-slots__overlay::before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;-webkit-transform:scale(0);transform:scale(0)}.c-slots__overlay::before{border-top:2px solid #24bcae;border-right:2px solid #24bcae;-webkit-transform-origin:100% 0;transform-origin:100% 0}.c-slots__overlay::after{border-left:2px solid #24bcae;border-bottom:2px solid #24bcae;-webkit-transform-origin:0 100%;transform-origin:0 100%}.c-slots__title{font-size:1.4rem}.c-slots__play-btn{width:52px;height:52px;display:block;position:absolute;left:50%;top:60%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url(img/icons/icon-play-game.svg);background-size:contain;background-position:center;background-repeat:no-repeat}@media (min-width:768px){.c-slots__filter-holder{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-pack:justify;justify-content:space-between;flex-wrap:wrap}.c-slots__filter-devs{-webkit-box-ordinal-group:2;order:1;flex-basis:30%}.c-slots__filter-input{-webkit-box-ordinal-group:3;order:2;margin-bottom:0;flex-basis:60%}.c-slots__list{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;flex-wrap:wrap;-webkit-box-pack:center;justify-content:center}.c-slots__item{flex-basis:30%;margin:0 5px 10px}}@media (min-width:992px){.c-slots__item{flex-basis:18%}.c-slots__title{font-size:1.2rem}.c-slots__play-btn{top:65%}}
+  </style>
+  <link rel="preload" href="/css/app.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/app.css"></noscript>
+  <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var t,o=loadCSS.relpreload={};o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},o.support()||(o.poly(),t=n.setInterval(o.poly,500),n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})),"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+</head>
+
+<body>
+  <header class="c-header">
+  <div class="o-container">
+    <div class="c-header__container">
+      <nav class="c-header__nav c-nav">
+        <ul class="c-nav__list">
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link o-link">Игры</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link o-link">Новости</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link o-link">Промо</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link o-link">Турниры</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="c-header__logo-container">
+        <a href="#" class="c-header__logo-link"></a>
+      </div>
+      <div class="c-header__interaction-section">
+        <a href="#" class="c-header__register-btn o-link">Регистрация</a>
+        <a href="#" class="c-header__enter-btn o-link">Вход</a>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="c-main">
+    <div class="o-container">
+      <div class="c-main__container">
+        <div class="c-main__banner c-banner">
+  <picture>
+    <source srcset="#" data-srcset="/img/webp/banner/banner.webp" type="image/webp">
+    <img src="#" data-src="/img/banner/banner.jpg" alt="img" title="img" class="lazyload">
+  </picture>
+</div>
+        <div class="c-main__catedory-games c-category-games">
+  <ul class="c-category-games__list">
+    <li class="c-category-games__item">
+      <a href="#" class="c-category-games__link o-link">
+        <div class="c-category-games__icon all-games"></div>
+        <span class="c-category-games__title">Все игры</span>
+      </a>
+    </li>
+    <li class="c-category-games__item">
+      <a href="#" class="c-category-games__link o-link">
+        <div class="c-category-games__icon slots"></div>
+        <span class="c-category-games__title">Слоты</span>
+      </a>
+    </li>
+    <li class="c-category-games__item">
+      <a href="#" class="c-category-games__link o-link">
+        <div class="c-category-games__icon jackpots"></div>
+        <span class="c-category-games__title">Джекпоты</span>
+      </a>
+    </li>
+    <li class="c-category-games__item">
+      <a href="#" class="c-category-games__link o-link">
+        <div class="c-category-games__icon table-games"></div>
+        <span class="c-category-games__title">Настольные</span>
+      </a>
+    </li>
+    <li class="c-category-games__item">
+      <a href="#" class="c-category-games__link o-link">
+        <div class="c-category-games__icon video-poker"></div>
+        <span class="c-category-games__title">Видео покер</span>
+      </a>
+    </li>
+    <li class="c-category-games__item">
+      <a href="#" class="c-category-games__link o-link">
+        <div class="c-category-games__icon lottery"></div>
+        <span class="c-category-games__title">Лотереи</span>
+      </a>
+    </li>
+  </ul>
+</div>
+        <div class="c-main__slots c-slots">
+  <div class="c-slots__filter-holder">
+    <div class="c-slots__filter-devs">
+      <div class="c-slots__devs-select-field">Все провайдеры</div>
+      <div name="filter-devs" class="c-slots__devs-list">
+        <div class="c-slots__devs-item selected">Все провайдеры</div>
+        <div class="c-slots__devs-item">Amatic</div>
+        <div class="c-slots__devs-item">Big Time Gamming</div>
+        <div class="c-slots__devs-item">BetSoft Gamming</div>
+        <div class="c-slots__devs-item">Endorphina</div>
+        <div class="c-slots__devs-item">Endorphina</div>
+      </div>
+    </div>
+    <div class="c-slots__filter-input">
+      <label for="search" class="c-slots__search-holder">
+        <input type="text" id="search" class="c-slots__search" placeholder="Поиск">
+      </label>
+    </div>
+  </div>
+  <div class="c-slots__list">
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/streetfighter2.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/streetfighter2.jpg" alt="Street Fighter™ II: The World Warrior Slot Touch" title="Street Fighter™ II: The World Warrior Slot Touch" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">Street Fighter™ II: The World Warrior Slot Touch</h3>
+        <a href="#" class="c-slots__play-btn"></a>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/9potsOfGold.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/9potsOfGold.jpg" alt="9 Pots Of Gold" title="9 Pots Of Gold" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">9 Pots Of Gold</h3>
+        <a href="#" class="c-slots__play-btn"></a>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/9masksOfFire.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/9masksOfFire.jpg" alt="9 Masks Of Fire" title="9 Masks Of Fire" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">9 Masks Of Fire</h3>
+        <a href="#" class="c-slots__play-btn"></a>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/immortalRomance.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/immortalRomance.jpg" alt="Immortal Romance" title="Immortal Romance" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">Immortal Romance</h3>
+        <a href="#" class="c-slots__play-btn"></a>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/bookOfOz.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/bookOfOz.jpg" alt="Book Of Oz" title="Book Of Oz" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">Book Of Oz</h3>
+        <div class="c-slots__play-btn"></div>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/jamminjars.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/jamminjars.jpg" alt="Jammin Jars" title="Jammin Jars" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">Book Of Oz</h3>
+        <div class="c-slots__play-btn"></div>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/godsoffortune_mobile_html_sw.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/godsoffortune_mobile_html_sw.jpg" alt="Divine Fortune Touch" title="Divine Fortune Touch" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">Divine Fortune Touch</h3>
+        <div class="c-slots__play-btn"></div>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/jackandbeanstalk_mobile_html_sw.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/jackandbeanstalk_mobile_html_sw.jpg" alt="Jack And The Beanstalk Touch" title="Jack And The Beanstalk Touch" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">Jack And The Beanstalk Touch</h3>
+        <div class="c-slots__play-btn"></div>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/eldorado_mobile_html_sw.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/eldorado_mobile_html_sw.jpg" alt="Gonzos Quest Touch" title="Gonzos Quest Touch" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">Gonzo's Quest Touch</h3>
+        <div class="c-slots__play-btn"></div>
+      </div>
+    </div>
+    <div class="c-slots__item">
+      <picture>
+        <source srcset="#" data-srcset="/img/webp/slots/goldilocks2.webp" type="image/webp">
+        <img src="#" data-src="/img/slots/goldilocks2.jpg" alt="Goldilocks And The Wild Bears" title="Goldilocks And The Wild Bears" class="lazyload c-slots__img">
+      </picture>
+      <div class="c-slots__overlay">
+        <h3 class="c-slots__title">Goldilocks And The Wild Bears</h3>
+        <div class="c-slots__play-btn"></div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="c-slots__show-more o-link">Показать все</a>
+</div>
+        
+<div id="table-data-list" class="table" style="float: left; padding: 10px 15px; border: 1px solid #DE9400; border-radius: 15px; background: #3A3834; margin-right: 15px">
+  <div class="s-content--top-decoration-container">
+    <ul>
+      <li><a class="nav-item" href="#register">Регистрация</a></li>
+      <li><a class="nav-item" href="#zerkalo">Рабочее зеркало</a></li>
+      <li><a class="nav-item" href="#bonus">Бездепозитный бонус</a></li>
+      <li><a class="nav-item" href="#free">Играть онлайн бесплатно</a></li>
+      <li><a class="nav-item" href="#money">Играть в игровые автоматы на деньги</a></li>
+      <li><a class="nav-item" href="#mobile">Мобильная версия</a></li>
+      <li><a class="nav-item" href="#deposits">Депозиты и вывод выигрышей</a></li>
+      <li><a class="nav-item" href="#play">Стоит ли играть</a></li>
+      <li><a class="nav-item" href="#faq">Часто задаваемые вопросы</a></li>
+    </ul>
+  </div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut neque quo eligendi alias veniam nostrum maiores corporis
+  vitae magni similique molestiae rerum assumenda ex quisquam cumque adipisci, modi tempora ratione.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut neque quo eligendi alias veniam nostrum maiores corporis
+  vitae magni similique molestiae rerum assumenda ex quisquam cumque adipisci, modi tempora ratione.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut neque quo eligendi alias veniam nostrum maiores corporis
+  vitae magni similique molestiae rerum assumenda ex quisquam cumque adipisci, modi tempora ratione.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut neque quo eligendi alias veniam nostrum maiores corporis
+  vitae magni similique molestiae rerum assumenda ex quisquam cumque adipisci, modi tempora ratione.</p>
+<div class="c-main__table-container">
+  <table>
+    <tbody>
+      <tr>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+      </tr>
+      <tr>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+      </tr>
+      <tr>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+      </tr>
+      <tr>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+        <td>Тест тест тест</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+        <div class="c-main__faq c-faq">
+  <details class="c-faq__holder" open>
+    <summary class="c-faq__question">Lorem ipsum dolor sit amet consectetur adipisicing suscipit?</summary>
+    <span class="c-faq__answer">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+      тексты.</span>
+  </details>
+</div>
+        <div class="c-main__reviews c-reviews">
+  <div class="c-reviews__item">
+    <div class="c-reviews__img-section"></div>
+    <div class="c-reviews__txt-section">
+      <div class="c-reviews__personal-info">
+        <div class="c-reviews__name">Иван Иванов</div>
+        <time class="c-reviews__date">02.02.2020</time>
+      </div>
+      <div class="c-reviews__comment">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+        тексты. Ручеек, обеспечивает подпоясал заглавных, оксмокс свое его страну запятой щеке, домах грустный коварный
+        вершину взгляд! Скатился буквенных жизни речью одна.</div>
+      <a href="#" class="c-reviews__answer-btn">Ответить</a>
+    </div>
+  </div>
+  <div class="c-reviews__item">
+    <div class="c-reviews__img-section"></div>
+    <div class="c-reviews__txt-section">
+      <div class="c-reviews__personal-info">
+        <div class="c-reviews__name">Иван Иванов</div>
+        <time class="c-reviews__date">02.02.2020</time>
+      </div>
+      <div class="c-reviews__comment">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+        тексты. Ручеек, обеспечивает подпоясал заглавных, оксмокс свое его страну запятой щеке, домах грустный коварный
+        вершину взгляд! Скатился буквенных жизни речью одна.</div>
+      <a href="#" class="c-reviews__answer-btn">Ответить</a>
+    </div>
+  </div>
+  <div class="c-reviews__item">
+    <div class="c-reviews__img-section"></div>
+    <div class="c-reviews__txt-section">
+      <div class="c-reviews__personal-info">
+        <div class="c-reviews__name">Иван Иванов</div>
+        <time class="c-reviews__date">02.02.2020</time>
+      </div>
+      <div class="c-reviews__comment">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+        тексты. Ручеек, обеспечивает подпоясал заглавных, оксмокс свое его страну запятой щеке, домах грустный коварный
+        вершину взгляд! Скатился буквенных жизни речью одна.</div>
+      <a href="#" class="c-reviews__answer-btn">Ответить</a>
+    </div>
+  </div>
+</div>
+        <div class="c-main__payments c-payments">
+  <ul class="c-payments__list">
+    <li class="c-payments__item visa">Visa/Mastercard</li>
+    <li class="c-payments__item maestro">Maestro</li>
+    <li class="c-payments__item qiwi">Qiwi</li>
+    <li class="c-payments__item webmoney">Webmoney</li>
+    <li class="c-payments__item yandex-money">Яндекс.Деньги</li>
+    <li class="c-payments__item skrill">Skrill</li>
+    <li class="c-payments__item neteller">Neteller</li>
+  </ul>
+</div>
+      </div>
+    </div>
+    <div class="c-main__bottom-nav c-bottom-nav">
+  <div class="o-container">
+    <nav class="c-bottom-nav__container">
+      <ul class="c-bottom-nav__list">
+        <li class="c-bottom-nav__item">
+          <a href="#" class="c-bottom-nav__link o-link">О НАС</a>
+        </li>
+        <li class="c-bottom-nav__item">
+          <a href="#" class="c-bottom-nav__link o-link">ОТВЕТСТВЕННАЯ ИГРА</a>
+        </li>
+        <li class="c-bottom-nav__item">
+          <a href="#" class="c-bottom-nav__link o-link">ПАРТНЕРАМ</a>
+        </li>
+        <li class="c-bottom-nav__item">
+          <a href="#" class="c-bottom-nav__link o-link">ПРАВИЛА И УСЛОВИЯ</a>
+        </li>
+        <li class="c-bottom-nav__item">
+          <a href="#" class="c-bottom-nav__link o-link">ПОЛИТИКА ФАЙЛОВ COOKIE</a>
+        </li>
+        <li class="c-bottom-nav__item">
+          <a href="#" class="c-bottom-nav__link o-link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+  </main>
+
+  <footer class="c-footer">
+  <div class="o-container">
+    <div class="c-footer__container">
+      <div class="c-footer__devs c-devs">
+        <ul class="c-devs__list">
+          <li class="c-devs__item amatic"></li>
+          <li class="c-devs__item netent"></li>
+          <li class="c-devs__item betsoft"></li>
+          <li class="c-devs__item spinomenal"></li>
+          <li class="c-devs__item microgamming"></li>
+          <li class="c-devs__item endorphina"></li>
+          <li class="c-devs__item d2by2"></li>
+          <li class="c-devs__item relax-gamming"></li>
+          <li class="c-devs__item rabcat"></li>
+          <li class="c-devs__item genesis"></li>
+          <li class="c-devs__item qiuickspin"></li>
+          <li class="c-devs__item btg"></li>
+          <li class="c-devs__item justforwin"></li>
+        </ul>
+      </div>
+      <div class="c-footer__certificate c-certificate">
+        <ul class="c-certificate__list">
+          <li class="c-certificate__item responible-gamming"></li>
+          <li class="c-certificate__item comodo"></li>
+        </ul>
+      </div>
+      <p class="c-footer__info">Jozz.com is operated by NETGLOBE SERVICES LTD acting as a payment processor, a company
+        with a registered address at 79 Spyrou Kyprianou Avenue, Protopapas Building, 2nd floor, office 201, 3076
+        Limassol, Cyprus. Registration number HE 313864</p>
+      <p class="c-footer__info">GLOBONET B.V., a company with registered address at Kaya Richard J. Beaujon Z / N,
+        Curaçao, is licensed by the Government of Curacao under the No.1668 / JAZ. Reg num 146296</p>
+      <p class="c-footer__info">Copyright © 2020. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  <div class="c-sidebar">
+    <div class="o-container">
+      <div class="c-sidebar__container">
+        <div class="c-sidebar__preview">
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__item">
+              <a href="#" class="c-sidebar__link o-link">Игры</a>
+            </li>
+            <li class="c-sidebar__item">
+              <a href="#" class="c-sidebar__link o-link">Турниры</a>
+            </li>
+            <li class="c-sidebar__item">
+              <a href="#" class="c-sidebar__link o-link">Промо</a>
+            </li>
+          </ul>
+        </div>
+        <div class="js-toggleBtn">
+          <div class="js-toggleBtn__line"></div>
+          <div class="js-toggleBtn__line"></div>
+          <div class="js-toggleBtn__line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/main.min.js"></script>
+<script src="/js/lazysizes.min.js"></script>
+</body>
+
+</html>
